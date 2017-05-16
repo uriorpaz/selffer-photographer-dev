@@ -1,0 +1,46 @@
+<% if @like_count || @priv_count || @album_count %>
+  var changed_photo = $('#photo-<%= @photo.id %>')
+  <% if @like_count %>
+    $('#like_photo_count').text('<%= @like_count %>');
+    var changed_photo_link = changed_photo.find('.like-link')
+    var link_href = changed_photo_link.attr('href')
+    <% if @photo.like %>
+      changed_photo.addClass('category_like');
+      changed_photo.find('.like-photo-action').addClass('active');
+      changed_photo_link.attr('href', link_href.replace('=true','=false'))
+    <% else %>
+      changed_photo.removeClass('category_like');
+      changed_photo.find('.like-photo-action').removeClass('active');
+      changed_photo_link.attr('href', link_href.replace('=false', '=true'))
+    <% end %>
+  <% end %>
+  <% if @priv_count %>
+    $('#priv_photo_count').text('<%= @priv_count %>');
+    $('#not_priv_photo_count').text('<%= @not_priv_count %>');
+    var changed_photo_link = changed_photo.find('.priv-link')
+    var link_href = changed_photo_link.attr('href')
+    <% if @photo.priv %>
+      changed_photo.addClass('category_2');
+      changed_photo.find('.priv-photo-action').addClass('active');
+      changed_photo_link.attr('href', link_href.replace('=true','=false'))
+    <% else %>
+      changed_photo.removeClass('category_2');
+      changed_photo.find('.priv-photo-action').removeClass('active');
+      changed_photo_link.attr('href', link_href.replace('=false','=true'))
+    <% end %>
+  <% end %>
+  <% if @album_count %>
+    $('#album_photo_count').text('<%= @album_count %>');
+    var changed_photo_link = changed_photo.find('.album-link')
+    var link_href = changed_photo_link.attr('href')
+    <% if @photo.album %>
+      changed_photo.addClass('category_album');
+      changed_photo.find('.album-photo-action').addClass('active');
+      changed_photo_link.attr('href', link_href.replace('=true','=false'))
+    <% else %>
+      changed_photo.removeClass('category_album');
+      changed_photo.find('.album-photo-action').removeClass('active');
+      changed_photo_link.attr('href', link_href.replace('=false', '=true'))
+    <% end %>
+  <% end %>
+<% end %>

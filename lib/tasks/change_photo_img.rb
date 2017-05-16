@@ -1,0 +1,1 @@
+Photo.find_each{|p| p.update(img: "https://selffer.s3.amazonaws.com/selffer/#{ENV['CUSTOM_ENV'] || Rails.env}/events/#{p.event.id}/pictures/orig_images/#{p.img}") unless p.img.include? 'selffer.s3.amazonaws.com'}

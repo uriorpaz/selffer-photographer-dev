@@ -1,0 +1,37 @@
+<body >
+<!-- <p>Hey,</p>
+
+<p>You have been invited by <%= @event.photographer.studio_name %> to collaborate on the <%= @event.name %> event album.</p>
+
+<p>Use this link to join the album: <%= link_to  event_invite_url(@event, @invite.code), event_invite_url(@event, @invite.code) %><br>
+<% if @password %>
+  Your log in details:<br>
+  User name: <%= @invite.invited_email %><br>
+  Password: <%= @password %></p>
+<% end %>
+
+<p>The Selffer web album platform allows you, your family, your friends and all your guests, to see the photos they appear in.<br>
+Just upload a selfie of yours and Selffer will show all your photos.</p>
+
+<p>Have any suggestion, question, comment, thought, wish?<br>
+Feel free to contact us by replying to this email 24/7</p>
+
+<p>The Selffer Team</p> -->
+
+ <!--  <li>event url: <%#= link_to  event_url(@event), event_url(@event) %></li>
+  <li>event number: <%#= @event.id %></li>
+  <li>photographer <%#= link_to @photographer.studio_name, photographer_url(@photographer) %></li>
+  <li>owner: <%#= @invite.invited_email %></li> -->
+<div style="text-align:right; direction:rtl;" %>
+  <%= simple_format  @invite.invite_message %>
+
+<p>-------------------------------------------------------------------</p>
+
+<ul style="list-style-type:none; padding-right:0px">
+  <li> <%= t("photographer_client.invited_link")%>: <%= link_to @link, @link %></li>
+  <li> <%= t("photographer_client.invited_name")%>: <%= @invite.invited_email %> </li>
+  <li><%= t("photographer_client.invited_password") %>: <%= @password %></li>
+</li>
+</ul>
+</div>
+</body>

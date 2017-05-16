@@ -1,0 +1,78 @@
+<div id="edit-event" class="modal container fade" tabindex="-1">
+  <div class="modal-body" id = 'modal'>
+    <div class="portlet light">
+      <div class="portlet-title">
+        <div class="caption font-red-sunglo">
+          <span class="caption-subject bold uppercase"> Event </span>
+        </div>
+      </div>
+      <div class="portlet-body form">
+        <%= form_for @event, role: "form", remote: @event.id.present? do |f| %>
+          <div class="form-body">
+            <div class="form-group form-md-line-input">
+              <%= f.text_field :name, id: "form_control_name", class: "form-control lang-fields en-fields", placeholder: "Enter event name"  %>
+
+              <label for="form_control_name">Event name</label>
+
+              <span class="help-block">Write event owner name, for Example: Dana&David</span>
+              <span class="error" id = 'required' hidden> <%= t "photographer_client.event_name_required"%> </span>
+            </div>
+            <%= image_tag("http://i.imgur.com/6RMhx.gif", id: "loading-indicator-event", hidden: true) %>
+            <div class="form-group form-md-line-input">
+              <%= f.text_field :event_type, id: "form_control_1", class: "form-control lang-fields en-fields", placeholder: "Enter event type"  %>
+              <label for="form_control_1">Event type</label>
+              <span class="help-block">Write the event type, for Example: Wedding</span>
+            </div>
+            <div class="form-group form-md-line-input">
+              <%= f.text_field :date, value: @event.decorate_date, class: "form-control form-control-inline date-picker", placeholder: "Enter event date", size: 16, data: {"date-format" => "dd.mm.yyyy"}  %>
+              <label for="form_control_1">Event date</label>
+              <span class="help-block">Select date</span>
+            </div>
+            <% if admin_signed_in? %>
+                <%= hidden_field_tag "photographer_id", @photographer.id %>
+            <% end %>
+            <!-- <div class="form-group form-md-line-input">
+              <%= f.text_field :guests, class: "form-control", placeholder: "Enter guests amount"  %>
+              <label for="form_control_1">Event guests amount</label>
+              <span class="help-block">Some help goes here...</span>
+            </div>
+            <div class="form-group form-md-line-input">
+              <%= f.text_field :place, class: "form-control lang-fields en-fields", placeholder: "Enter event place"  %>
+              <label for="form_control_1">Event place</label>
+            </div>
+            <div class="form-group form-md-line-input">
+              <%= f.text_area :description, class: "form-control lang-fields en-fields", placeholder: "Enter description", rows: 4  %>
+              <label for="form_control_1">Description</label>
+            </div> -->
+          </div>
+          <!-- <h4><%# link_to 'preview your event page', "#{ENV['STAGING_MAIN_SERVER_URL'] || Rails.application.secrets[:env]['MAIN_SERVER_URL']}/events/#{@event.slug}", target: '_blank' %></h4> -->
+          <div class="form-actions noborder">
+            <%= f.submit 'Submit', class: "btn blue", id: 'btn-blue'%>
+            <a data-dismiss="modal" class="btn btn-default cancel-btn">Cancel</a>
+          </div>
+        <%end%>
+<!--         <h2>Cover photos</h2><p>You can change it in <%#= link_to "gallery", event_path(@event) %></p>
+        <div class="row mix-grid" id='photo-gallery'>
+          <%# render @bg_photos %>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+$(function(){
+  $('#btn-blue').on('click', function(e){
+    if ($('#form_control_name').val() == ''){
+      e.preventDefault();
+        $('#required').fadeIn('slow');
+        $('#form_control_name').val('');
+        $('#form_control_name').focus(function() {
+        $('#required').hide();
+        $('#form_control_name').val('');
+        });
+    } else {
+        $('#loading-indicator-event').show();
+    }
+  });
+});
+</script>

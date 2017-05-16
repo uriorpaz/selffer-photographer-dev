@@ -1,0 +1,19 @@
+<tr>
+  <td>
+     <%= guest_invite.id %>
+  </td>
+  <td>
+    <%= guest_invite.email %>
+  </td>
+  <td>
+    <%= guest_invite.phone %>
+  </td>
+  <td>
+    <span class="label label-sm label-<%= guest_invite.code ? 'warning' : 'success' %>">
+    <%= guest_invite.status %> </span>
+  </td>
+  <td>
+    <%= link_to 'Share',  event_guest_invite_share_path(@event,guest_invite) %>, 
+    <%= link_to 'Remove', event_guest_invite_path(@event,guest_invite), method: :delete, 'data-confirm' => "Are you sure?" %>
+  </td>
+</tr>

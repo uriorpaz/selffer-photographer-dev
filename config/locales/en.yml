@@ -1,0 +1,1136 @@
+en:
+  account:
+    destroy:
+      cancel: Cancel
+      link: Delete my account
+      notice: EEE
+      prompt: Delete your account?
+      submit: Yes, delete my account
+      warning: Your account will be permanently deleted. This cannot be undone.
+    edit:
+      link: Account
+  accounts:
+    connected: Success! Your social account is now connected.
+    edit:
+      link: Social
+    updated: Success! Your social account is up-to-date.
+  activerecord:
+    attributes:
+      admin:
+        created_at: Created at
+        current_sign_in_at: Current sign in at
+        current_sign_in_ip: Current sign in ip
+        email: Email
+        id: Id
+        last_sign_in_at: Last sign in at
+        last_sign_in_ip: Last sign in ip
+        password: Password
+        password_confirmation: Password confirmation
+        remember_created_at: Remember created at
+        reset_password_sent_at: Reset password sent at
+        reset_password_token: Reset password token
+        sign_in_count: Sign in count
+        updated_at: Updated at
+      event:
+        archives: Archives
+        created_at: Created at
+        date: Date
+        description: Description
+        event_translations: Event translations
+        event_type: Event type
+        facebook_share_text: Facebook share text
+        guest_invites: Guest invites
+        guests: Guests
+        id: Id
+        invites: Invites
+        is_published: Is published
+        long_description: Long description
+        name: Name
+        needs_moderation: Needs moderation
+        password: Password
+        photographer: Photographer
+        photos_count: Photos count
+        place: Place
+        pre_text: Pre text
+        requires_password: Requires password
+        send_notification: Send notification
+        share_message: Share message
+        slug: Slug
+        slugs: Slugs
+        status: Status
+        tag_list: Tag list
+        terms_of_use: Terms of use
+        updated_at: Updated at
+        upload_logs: Upload logs
+        users: Users
+        watermark_landscape: Watermark landscape
+        watermark_portrait: Watermark portrait
+      invite:
+        invited_id: Invited
+      user:
+        email: Email
+        password: Password
+    models:
+      admin: Admins
+      archive: Archives
+      authentication: Authentications
+      error_log: Error logs
+      event: Event
+      event_translation: Event translations
+      face_image: Face images
+      fb_album: Fb albums
+      guest_invite: Guest invites
+      invite: Invite
+      link: Links
+      oauth_cache: Oauth caches
+      photo: Photos
+      photographer: Photographers
+      photos_share: Photos shares
+      possible_face: Possible faces
+      recognition: Recognitions
+      recognition_photo: Recognition photos
+      share: Shares
+      shortener/shortened_url: Shortened urls
+      subscriber: Subscribers
+      temp_face_image: Temp face images
+      temp_recognition: Temp recognitions
+      temp_recognition_photo: Temp recognition photos
+      upload_log: Upload logs
+      user: User
+      watermark: Watermarks
+  admin:
+    actions:
+      show_in_app:
+        title: 
+    help:
+      event:
+        archives: 'Optional. '
+        date: 'Optional. '
+        description: 'Optional. '
+        event_translations: 'Optional. '
+        event_type: 'Optional. '
+        facebook_share_text: 'Optional. '
+        guest_invites: 'Optional. '
+        guests: 'Optional. '
+        invites: 'Optional. '
+        is_published: 
+        long_description: 'Optional. '
+        name: 'Optional. '
+        needs_moderation: 
+        password: Optional. Length up to 255.
+        photographer: 'Optional. '
+        photos_count: 'Optional. '
+        place: 'Optional. '
+        pre_text: 'Optional. '
+        requires_password: 
+        send_notification: 
+        slug: 'Optional. '
+        status: 'Optional. '
+        terms_of_use: 'Optional. '
+        upload_logs: 'Optional. '
+        users: 'Optional. '
+        watermark_landscape: 'Optional. '
+        watermark_portrait: 'Optional. '
+    new:
+      tag_list_help: Use commas to separate tags
+  archive_mailer:
+    generate_file_started:
+      subject: Generate file started
+    send_file:
+      link: click to download the photos
+      subject: Your photos from Selffer are ready for download
+      text_before: 'The files you requested can be downloaded from the following link:'
+  auth:
+    before_connect: You may need to first
+    confirm:
+      link: I need to confirm my account
+      submit: Resend confirmation instructions
+    connect: Connect
+    destroy:
+      cancel: Cancel
+      link: Disconnect
+      notice: Your social account will be disconnected form your Selffer account. You can reconnect the social account at any time.
+      prompt: Disconnect this social account?
+      submit: Yes, disconnect the account
+      tooltip: Disconnect social account and remove related data
+      warning: FFF
+    edit:
+      link: Social
+    error:
+      oops: Oops!
+      wrong: Something didn't work as expected. Please try again.
+    forgot:
+      link: I forgot my password
+      prompt: Forgot password?
+      submit: Send forgot password instructions
+    links:
+      title: Account Help
+    login:
+      link: Sign In
+      link_with: Sign In with %{provider}
+      title: Please Sign In, or %{signup_link}
+    logout:
+      link: sign out
+    reconnect:
+      link: Update
+      tooltip: Update your social data
+    reset:
+      invalid_message: Your account token expired. To protect your security, please resend password instructions and try again.
+      invalid_title: Unable to reset password
+      link: Change your password
+      submit: Reset Password
+    signup:
+      email_taken: An account with your email already exists. %{login_link}
+      help: Already registered? %{login_link}
+      link: Sign Up
+      title: Sign Up
+    unlock:
+      link: My account is locked
+      submit: Resend unlock instructions
+  brand:
+    name: Selffer
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    - 
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    formats:
+      default: "%Y-%m-%d"
+      long: "%B %d, %Y"
+      short: "%b %d"
+    month_names:
+    - 
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+    order:
+    - :year
+    - :month
+    - :day
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: about 1 hour
+        other: about %{count} hours
+      about_x_months:
+        one: about 1 month
+        other: about %{count} months
+      about_x_years:
+        one: about 1 year
+        other: about %{count} years
+      almost_x_years:
+        one: almost 1 year
+        other: almost %{count} years
+      half_a_minute: half a minute
+      less_than_x_minutes:
+        one: less than a minute
+        other: less than %{count} minutes
+      less_than_x_seconds:
+        one: less than 1 second
+        other: less than %{count} seconds
+      over_x_years:
+        one: over 1 year
+        other: over %{count} years
+      x_days:
+        one: 1 day
+        other: "%{count} days"
+      x_minutes:
+        one: 1 minute
+        other: "%{count} minutes"
+      x_months:
+        one: 1 month
+        other: "%{count} months"
+      x_seconds:
+        one: 1 second
+        other: "%{count} seconds"
+    prompts:
+      day: Day
+      hour: Hour
+      minute: Minute
+      month: Month
+      second: Seconds
+      year: Year
+  devise:
+    confirmations:
+      confirmed: Your account was successfully confirmed. Please log in.
+      confirmed_and_signed_in: Your account was successfully confirmed. You are now logged in.
+      send_instructions: You will receive an email with instructions about how to confirm your account in a few minutes.
+      send_paranoid_instructions: If your email address exists in our database, you will receive an email with instructions about how to confirm your account in a few minutes.
+    failure:
+      already_authenticated: 
+      inactive: Your account is not activated yet.
+      invalid: Invalid email or password.
+      invalid_token: Invalid authentication token.
+      locked: Your account is locked.
+      not_found_in_database: Invalid email or password.
+      timeout: Your session expired. Please log in again to continue.
+      unauthenticated: Please log in before continuing.
+      unconfirmed: You have to confirm your account before continuing.
+    mailer:
+      confirmation_instructions:
+        subject: Confirmation instructions
+      reset_password_instructions:
+        photographer_subject: Reset password instructions
+        subject: Reset password instructions
+      unlock_instructions:
+        subject: Unlock Instructions
+    omniauth_callbacks:
+      failure: Could not authenticate you from %{kind} because "%{reason}".
+      success: Successfully authenticated from %{kind} account.
+    passwords:
+      no_token: You can't access this page without coming from a password reset email. If you do come from a password reset email, please make sure you used the full URL provided.
+      send_instructions: You will receive an email with instructions about how to reset your password in a few minutes.
+      send_paranoid_instructions: If your email address exists in our database, you will receive a password recovery link at your email address in a few minutes.
+      updated: Your password was changed successfully. You are now signed in.
+      updated_not_active: Your password was changed successfully.
+    registrations:
+      destroyed: We deleted your account. Thank you for trying out our app.
+      signed_up: Welcome! You successfully signed up.
+      signed_up_but_inactive: You have signed up successfully. However, we could not sign you in because your account is not yet activated.
+      signed_up_but_locked: You have signed up successfully. However, we could not sign you in because your account is locked.
+      signed_up_but_unconfirmed: A message with a confirmation link has been sent to your email address. Please open the link to confirm your account.
+      update_needs_confirmation: You updated your account successfully, but we need to verify your new email address. Please check your email and click on the confirm link to finalize confirming your new email address.
+      updated: You updated your account successfully.
+    sessions:
+      signed_in: Welcome back.
+      signed_out: You signed out.
+    unlocks:
+      send_instructions: You will receive an email with instructions about how to unlock your account in a few minutes.
+      send_paranoid_instructions: If your account exists, you will receive an email with instructions about how to unlock it in a few minutes.
+      unlocked: Your account has been unlocked successfully. Please log in to continue.
+  domain:
+    back: back
+    confirm: are you sure?
+    created: created
+    date: date
+    delete: delete
+    description: description
+    destroy: destroy
+    edit: edit
+    email: email
+    event: event
+    events: events
+    find-me: find me
+    lang: Language
+    lang_code: Enter Language Code (e.g. ru)
+    logo: logo
+    long_description: long description
+    mail-list: email list
+    mail-title: Event email title
+    my-faces: my faces
+    name: name
+    none: none
+    phone: phone
+    photographers: photographers
+    photos: photos
+    pre-text: pre text
+    results: results
+    save: save
+    search: search
+    select-date: select date
+    show: show
+    temp-user-searches: temp user searches
+    update: update
+    website: website
+  emails:
+    share:
+      body: |-
+        Someone has shared photos from the event "%{event_name}" with you
+        The event was photographed by %{photographer_name} %{photographer_website}
+
+        Check out the photos here: %{photos_link}
+      mobile:
+        body: "Hi!\n\nWatch these photos from the event of %{event_name} that was photographed by %{photographer_name} \n%{share_url}\nAnyone can see photos of themselves from the event with Selffer"
+        subject: Photos from the event of %{event_name}
+      subject: See some great photos from the event "%{event_name}"
+    temp_recognition:
+      subject: Check Out Your Pictures from this Event!
+    welcome:
+      body: 
+      subject: Welcome to Selffer
+  en:
+    invite:
+      send_invite:
+        subject: 
+    shared:
+      recognition_popups:
+        ensure: 
+        not_recover: 
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: must be accepted
+      already_confirmed: was already confirmed, please try signing in
+      blank: can't be blank
+      confirmation: doesn't match confirmation
+      confirmation_period_expired: needs to be confirmed within %{period}, please request a new one
+      empty: can't be empty
+      equal_to: must be equal to %{count}
+      even: must be even
+      exclusion: is reserved
+      expired: has expired, please request a new one
+      greater_than: must be greater than %{count}
+      greater_than_or_equal_to: must be greater than or equal to %{count}
+      inclusion: is not included in the list
+      invalid: is invalid
+      less_than: must be less than %{count}
+      less_than_or_equal_to: must be less than or equal to %{count}
+      not_a_number: is not a number
+      not_an_integer: must be an integer
+      not_found: not found
+      not_locked: was not locked
+      not_saved:
+        one: '1 error prohibited this %{resource} from being saved:'
+        other: "%{count} errors prohibited this %{resource} from being saved:"
+      odd: must be odd
+      record_invalid: 'Validation failed: %{errors}'
+      taken: has already been taken
+      too_long:
+        one: is too long (maximum is 1 character)
+        other: is too long (maximum is %{count} characters)
+      too_short:
+        one: is too short (minimum is 1 character)
+        other: is too short (minimum is %{count} characters)
+      wrong_length:
+        one: is the wrong length (should be 1 character)
+        other: is the wrong length (should be %{count} characters)
+    template:
+      body: 'There were problems with the following fields:'
+      header:
+        one: 1 error prohibited this %{model} from being saved
+        other: "%{count} errors prohibited this %{model} from being saved"
+    unknown: Oops! Something went wrong. Please try again.
+  event:
+    actions:
+      always_show: Pin this
+      cover: Cover
+      delete: Delete
+      in_album: Album
+      private: Hide
+      share: Share
+    already_subscribed: Email already subscribed
+    blank_email: Email can not be blank!
+    create:
+      created: event created
+      error: error creating event
+    delete:
+      deleted: event deleted
+    edit-event: edit event
+    email-details: WE WILL SEND TO THIS EMAIL ONLY NOTIFICATIONS REGARD YOUR PHOTOS FROM THIS EVENT.
+    email-text: EMAIL ADDRESS
+    event-date: event date
+    filters:
+      album: Selected photos for album (%{number})
+      all_photos: All photos (%{number})
+      categories:
+        album: Album
+        pivate: Private
+        your_photos: Your photos
+      click_to_see: Click to search
+      cover: Cover photos (%{number})
+      not_approved: Not approved yet (%{number})
+      private: Hidden - only you see (%{number})
+      shares: Photos shared with you (%{number})
+      showing_all: All photos (%{number})
+      showing_only: "%{category} (%{number})"
+      your_photos: Your photos (%{number})
+    form:
+      at: 'on'
+      photos:
+        addfiles: Add files
+        cancelupload: Cancel upload
+        delete: Delete
+        dropmessage: Drop files here...
+        startupload: Start upload
+        title: event photos
+      post: post
+      update: update
+    found_your_photos: we found your photos
+    fuzzy_photo: We were not able to detect a face in this photo. Please use a higher quality photo. A smile might help as well :)
+    new-event: new event
+    no_image: No face found. Try another photo.
+    no_photo_uploaded: Photo was not uploaded!
+    not_you: not you?
+    one_detected: Photo must have only one face. Please try another photo.
+    open-camera: CLICK FOR SELFIE
+    photographed_by: Photographed by %{photographer_name}
+    recognition_popup:
+      continue: Watch all photos
+      search:
+        main: Search with a selfie
+        sub: Take a selfie and we will find YOUR photos
+      waiting_search_text: Searching for your photos, this might take a few seconds
+      waiting_text: This might take up to 30 sec
+      waiting_upload_text: Uploading your selfie
+    selfie-details: WE USE THIS PHOTO TO FIND THE PHOTOS YOU APPEAR IN FROM THIS EVENT. DON'T FORGET TO SMILE :)
+    selfie-text: TAKE A SELFIE
+    shared:
+      recognition_popups:
+        ensure: 
+        not_recover: 
+    show-events: show events
+    sign_up: SIGN UP TO GET YOUR PHOTOS
+    sign_up_btn: SIGN UP
+    signup_first: Please, sign up with your email first
+    subscribe: SUBSCRIBE
+    take-selfie: TAKE A SELFIE (OPTIONAL)
+    thanks-email: THANKS, WE WILL UPDATE YOU WHEN PHOTOS FROM THE EVENT ARE AVAILABLE
+    thanks-selfie: THANKS, WE WILL UPDATE YOU WHEN WE SEE YOU IN PHOTOS FROM THE EVENT
+    thanks_for_upload: Thanks!
+    update:
+      error: error updating event
+      updated: event updated
+    update-event: update event
+    wrong_email_format: Wrong email format!
+  events:
+    album:
+      fb_title_text: Text the Facebook share
+    gallery:
+      back: Back
+      cancel: Cancel
+      click_face: Click Your Face Below <br/> for Your Photos
+      click_here: Click Here
+      complete: Complete
+      completely_miss: Did we completely miss?
+      delete: Delete from my collection
+      downloads: Download
+      enter_email: enter your email address
+      enter_password: enter password
+      find_your_photos: 
+      first_load:
+        advise_1: 'TIPS for better results:'
+        advise_2: 1. Smile a bit :-)
+        advise_3: 2. Make sure you have good lighting
+        advise_4: 3. Face forward towards camera
+        sorry_no_image: Sorry, no photos found yet
+        you_can_try: Try again. Sometimes it can take several tries to find photos
+      first_visit_details: Take a selfie, and let Selffer find your photos, see photos with friends, and get notified when new photos you're in are added to the album.
+      found: photos found
+      get_notified: Get notified
+      incorrect_password: Incorrect Password!
+      make_yours: Make this album yours
+      multiple: Press your face
+      not_here: I'm not here
+      not_sure: We Are Not Sure
+      notification_details: Now that we found your photos, let us notify <br> &nbsp;you when new photos you're in are added to<br>&nbsp;the album
+      notify_me: Notify Me!
+      password_details: A password is required in order to view the album<br> &nbsp;%{event}. Contact your<br> &nbsp;administrator for the password.
+      password_required: Password required
+      second_load:
+        advise_1: 'TIPS - make sure your face is clear:'
+        advise_2: 1. Take off sunglasses
+        advise_3: 2. Take off hat
+        advise_4: 3. Make sure your hair is not covering your face
+        sorry_no_image: WHOOPS!  Hard to find you
+        you_can_try: Don't give up. Let's try again with more time
+      share: Share selected photos
+      sorry_no_image: 
+      submit_password: Submit
+      success_details: We will notify you via email as soon as new<br>&nbsp;photos you're in are uploaded to this event.
+      success_notified: Done!
+      terms_of_use: Terms of Use
+      terms_of_use_agreeing: By submitting the code and entering the album<br> &nbsp;you are agrreing to the
+      terms_of_use_text: Selffer will not use the photos in this album for any commercial purpose.
+      thanks_subscriber: OK,Thanks
+      third_load:
+        additional_text: 
+        get_link_text: Want to get your photos from the event to your phone? Today you can! Fill your email to get your photos
+        input_email_or_phone: email or phone number...
+        inputemail: "  your email.."
+        sendemail: Send
+        sign_up: 
+        sorry_no_image: We didn't find your photos yet
+        you_can_try: write down your email and we will send you your photos as soon as we will find them or you can try again
+      try_now: Try It Now!
+      wait: please wait, searching your pictures
+      watch_album: 
+      you_can_try: 
+    identify:
+      invitation: |-
+        Upload an image of your face and Selffer will find the photos you appear in from this event! \n
+
+        You can upload a photo or take a selfie
+      photo: upload your photo
+      photo_opt:
+        make_sure: Please make sure that your photo is clear and that your face is not at an angle.
+        take: Press To Take A Photo
+        why: By showing us what you look like, we’ll be able to quickly find you in the photos of the event.
+      selfie: take a selfie
+      selfie_opt:
+        make_sure: Please make sure that your selfie is clear and that your face is not at an angle.
+        why: 'Taking a selfie enables us to quickly find <br/> you in the photos of the event. '
+      show_prompt: Show us what you look like
+      step: Want to see the photos that you appear in?
+      watch_all: Watch the entire album
+    show:
+      loading_text: Your event is being prepared, this may take a few seconds
+      photos: View Album
+      preview_feature: In order to watch the photos you first have to PUBLISH the event
+      preview_function: 
+      preview_only: preview only
+      publish: publish photos
+    subscriber:
+      subscriber_mail_body: |-
+        There are new photos of you from %{event_name}!
+        You can see all your photos, including the new ones here: %{link}
+      subscriber_mail_subject: We found new photos of you from %{event_name}
+  face:
+    form:
+      addface: Add Face Image
+      search-temp-faces: 'Find these faces:'
+      updatefaces: Update My Faces
+    index:
+      addfaces: Please add some images of your face.
+      save-photo: save photo
+      take-photo: take photo
+      take-your-photo: 'Take a face photo using a webcam:'
+      title: My Faces
+      upload-temp-photos: 'Upload face photos:'
+      uploadphotos: "... Or upload photos of your face:"
+  facebook_share:
+    album_name: My pics from %{event_name}
+    copyright: " "
+    popups:
+      shared:
+        error_message: Our app doesn't have permissions to share your photos. Please grant permission in the next screen.
+        message: Your photos were shared
+        title: Done!
+  fb_title_text: 
+  general:
+    back-home: Back to Home Page
+    facebook: Facebook
+    google-plus: Google +
+    phone: Phone
+    privacy: privacy
+    terms: terms
+    twitter: Twitter
+    unsubscribe: unsubscribe
+  helpers:
+    select:
+      prompt: Please select
+    submit:
+      create: Create %{model}
+      submit: Save %{model}
+      update: Update %{model}
+      user:
+        create: Sign Up
+        update: Update Account
+  invite:
+    send-invite:
+      invite: 
+    send_invite:
+      subject: "התמונות מהאירוע של %{event_name} הגיעו!"
+  invite_mailer:
+    create:
+      subject: 
+    send_invite:
+      subject: The photos from the event of %{event_name} are ready!
+  layouts:
+    login_popup:
+      all_photos: Want to see all your photos?<br/>By signing up once, we’ll notify you when you appear in any photos that may be added to the collection in the future.
+      invitation: Get invitation
+      sign_up: sign up
+      validation:
+        name: please enter user name
+        password: please enter password
+    r_design_navigation:
+      about_us: About us
+      admin_mode: Event Owner Mode
+      all_photos: All Photos
+      back: BACK
+      back_html: "&larr; to album"
+      coming_soon: 'Coming soon: see photos of your close friends'
+      contact: Contact us
+      download_album: DOWNLOAD ALBUM
+      empty_friend: |-
+        WANT TO SEE PHOTOS
+        OF YOUR FRIENDS?
+      empty_me: TO FIND THE PHOTOS YOU'RE IN, WE NEED A SELFIE
+      find_selfie: To magically find your friend's photos
+      first_view: WANT TO SEE PHOTOS YOU'RE IN? CLICK HERE
+      friends: Friends
+      friends_search_tag: to magically find your friends' photos
+      friends_share_text: 'Know this person? Share their photos:'
+      friends_text: Send Your Friends Their Photos, Make Them :)
+      home: Home
+      loading_photos: Loading new set of photos...
+      log_in: SIGN IN
+      log_out: LOG OUT
+      me: My Photos
+      me_search_tag: to magically find all your photos
+      moderation: Approve Up to Here
+      more: "< more"
+      more_photos: Next >
+      my_photos: MY PHOTOS
+      no_more_photos: No more photos
+      photos: Photos
+      search_selfie: UPLOAD A SELFIE
+      see_more: More
+      select: select
+      share: Share
+      sign_up: SIGN UP
+      t_and_p: Terms & privacy
+      take_selfie: TAKE A SELFIE
+    r_design_popups:
+      about: About
+      another_selfie: Try Another Selfie
+      archive_started: The files will be sent shortly to the email
+      before_link: 'Here is your download link:'
+      busy: We are just finalizing a cool new feature and well call contact you back asap
+      contact_thanks: Thanks for contacting us
+      contact_us: contact us
+      download_album: Download Album
+      download_success_text: The link to download the photos will be sent to %{email_address}.\nThis action might take a few moments
+      download_success_text_one: download
+      download_success_text_two: download
+      download_success_title: Download photos request succeeded
+      email: Email
+      message: Message
+      name: Name
+      oops_title: Oops, Small Problem
+      phone: Phone
+      send: Send
+      send_message: Send us a message and we will get back to you asap
+      share_email_cancel_button: cancel
+      share_email_confirm_button: send
+      share_email_required_email: Fill in the email address you want to send the photos to
+      share_email_text: Fill the email you wish to send the photos to
+      share_email_title: Send to email
+      share_email_wrong_format: The email format is wrong. Try again
+      share_success_text: The photos were sent to the email
+      share_success_text_one: A url to download the photos will be sent shortly to the email
+      share_success_text_two: The photos have been sent to the email
+      share_success_title: Send to mail succeeded
+      short_explanation: With a smile it works better ;)
+      short_explanation_sub: Get notified about new photos you're in
+      subject: Subject
+      subscribe: Subscribe for Updates
+      success_title: Success
+      t_and_p: Terms & privacy
+      terms: User Terms
+      who_we_r: We are a bunch of guys who had some “trouble” with event photos. <br>As event owners it was too difficult for us to share all the photos with the guests and as guests we actually never saw our photos ☹
+      who_we_r_why: That’s why we created Selffer – the perfect and most easiest way to share photos with all the event guests
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u%n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "$"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
+          unit: 
+      format:
+        delimiter: 
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: 
+    precision:
+      format:
+        delimiter: 
+  pages:
+    error:
+      body: Our engineers have been notified and are looking into the problem. Sorry for the inconvenience.
+      title: You ended up here because we messed up
+    home:
+      get-started: Get Started!
+      title-tagline: Find Yourself in Events
+    r_design_home:
+      title:
+        contact: Photoagraphers, Get Invited
+        empower: Empower
+        photos: event photos
+        solution: Simple friendly solution where guests<br/> automatically receive the photos they're in
+        your: your
+  photographer_client:
+    drag_folder_restrict: |-
+      This feature is not supported in your browser.
+      Drag&Drop folders is supported in Chorome browser.
+    email_invite_blank: 
+    email_invite_message: "שלום,\n\nסטודיו הצילום %{studio_name} נתן לכם במתנה את אפליקציית הווב Selffer שמאפשרת לכל אחד לראות את התמונות של עצמו מהאירוע בקלות :-)\nֿפשוט מצלמים סלפי של עצמכם והמערכת אוטומטית מוצאת את כל התמונות בהן אתם מופיעים.\n\nפעולות שרק אתם כבעלי האירוע יכולים לבצע:\n1. לבצע הורדה של התמונות למחשב באיכות מלאה.\n2. לסמן תמונות שאתם רוצים לסדר באלבום. \n3. לסמן תמונות כ״פרטיות״ כך שרק אתם תראו אותם ושאר הצופים באלבום לא יראו אותן.\n\nלצפייה בתמונות לחצו על הקישור מטה והזינו שם משתמש וסיסמא.\n\nלכל שאלה, אתם מוזמנים להתקשר אלינו ב-050-5850022 (אורי) או להשיב למייל זה.\n\nמזל טוב!\nצוות Selffer"
+    email_invite_subject: "התמונות מהאירוע של %{event_name} הגיעו!"
+    email_photos_url_generating: |-
+      Hey,
+
+      The photos you asked to download from the event of %{event_name} will be sent to this email.
+
+      **this can take up to, 2 hours, depends on the amount of photos**
+
+      Best,
+
+      The Selffer team
+    email_photos_url_generating_title: Download the photos from the event of %{event_name}
+    email_with_photos_url: |+
+      Hey,
+
+      To download the photos from the event of %{event_name} click the url on the bottom.
+
+      Best,
+
+      The Selffer team
+
+
+    email_with_photos_url_title: |+
+      The photos from the event of %{event_name} are ready to download
+
+    event_name_required: Event name is required
+    info_popup_text: "תפריט actions:\n<br/>\nDownload photos - מאפשר לבחור תמונות ולהוריד אותן ברזולוציה מקורית למחשב. <br/>\nChoose cover photos - בחירת תמונות הרקע אשר יופיעו בעמוד הראשי של האירוע כפי שבעלי השמחה והאורחים יראו אותו <br/>\nDelete photos - מחיקת תמונות (לא ניתן לשזר) <br/>\nDelete event - המחיקת האירוע באופן מלא (לא ניתן לשחזר) <br/>\n\nתפריט תמונות לפי קטגוריות: <br/>\nניתן לצפות בכל התמונות בגלריה אחת ארוכה ולחילופין ניתן לצפות בתמונות לפי תיוגים שונים <br/>\ncover photos - תמונות שנבחרו לתמונות הרקע שיופיע בעמוד הרשאי של האירוע <br/>\nprivate photos - תמונות שאתם או הלקוח שלכם סימן כפרטיות. המשמעות של ״פרטיות״ היא שרק אתם או הלקוח שלכם תראו את התמונות האלו אך שאר האנשים שיצפו בתמונות מהאירוע לא יוכלו לראות את התמונות האלו. <br/>\npublic photos - זה למעשה כל התמונות שאינן ״פרטיות״. את כל התמונות האלו אנשים שצופים באלבום יוכלו לראות <br/>\nlike - תמונות שאתם או הלקוח סימן שאתם אוהבים. תמונות אלו יקבלו עדיפות גבוהה יותר והן יוצגו בראש הגלריה שהאורחים רואים. <br/>\nphotos for album - תמונות שהלקוח שלכם סימן שהוא רוצה שיכנסו לתוך האלבום שאתם מכינים לו. <br/>\n<br/>\n<br/>\n\nטיפים: <br/>\n1. ניתן לבצע הורדה של כל התמונות שנמצאות תחת תיוג אחת בקלות. כאשר אתם נמצאים למשל תחת תיוג של \"photos for album״ אתם יכולים ללחוץ על download ואז ללחוץ select all וזה פשוט יוריד לכם את כל התמונות שהלקוח בחר ישירות למחשב שלכם. <br/>\n\n2. העלאת מספר תיקיות בבט אחת. אם יש לכם למשל תיקיה שנקראת ״החתונה של אבי ואלה״ ובתוך התיקייה הזו יש 4 תיקיות משנה, אתם פשוט גוררים (drag&drop) את התיקייה לדפדן וזה אוטומטית יעלה את כל התמונות שנמצאות תחת כל התיקיות. <br/>\n***זה עובד רק בדפדפן chrome*** \n<br/>\n3. תיוג של התמונות כמו התיקיות שעל המחשב שלכם. כבר חילקת את התמונות של האירוע לתיקיות: ״התארגנות״, ״קבלת פנים״, ״חופה״, ״ריקודים״ וכו׳.. אין בעיה! פשוט תעלו את התמונות כמו שתיארנו בסעיף 2 והתמונות יתויגו אוטומטית עם שם התיקייה שלהם.  <br/>\n***זה עובד רק בדפדפן chrome***\n<br/>\n<br/>\nלכל שאלה נוספת, רעיון חדש שיכול לעזור לכם כאן או סתם אם בא לכם להגיד שלום אתם מוזמנים ללחוץ על הסימן שאלה בתחתית הימנית של המסך ונשמח לדבר :-)\n<br/>\n<br/>"
+    info_popup_title: "קצת עזרה על הכפתורים כאן וגם טיפים להורדה והעלאה של תמונות"
+    invite_popup_btn: Send Invite
+    invited_link: To select photos for album and to download photos click here
+    invited_name: User Name
+    invited_password: Your password
+    notification:
+      photos_generating: The photos will be sent to your email shortly
+    publish_popup_btn: Invite Owner & Publish
+  recognition:
+    create:
+      error: 'An error occurred: '
+      success: Search started.
+    destroy:
+      success: Recognition deleted.
+    edit:
+      show-results: Show Results
+      title: Update Search
+    form:
+      submit: Find Me!
+    index:
+      new: New Search
+      title: Previous Searches
+    new:
+      back: back
+      title: Find Me in Event
+    show:
+      confidence: " Confidence:"
+      no-results: no results
+      progress: progress
+      share-dropbox: Share on Dropbox
+      share-facebook: Share on Facebook
+      title: Face Recognition Results for %s
+      try-again: Try Again
+  shared:
+    author_footer:
+      photographed_by: Photographed by
+      photographed_by photo_person: 
+      photographed_by#{@photographer:
+        name}: 
+      photographed_by@photographer:
+        name: 
+      photographed_byphoto_person: 
+      photos_by: Photographed by
+    recognition_popups:
+      add_more: Add More Photos
+      before_wapp_link: "Hi! \n\nWatch these photos from the event of %{event_name} that was photographed by %{photographer_name} \n%{share_url}\nAnyone can see photos of themselves from the event with Selffer"
+      cancel_button_text: Cancel
+      cancel_delete: Cancel
+      confirm_button_text: OK
+      copy: Copy
+      delete: Delete
+      delete_it: Yes, delete it!
+      download_text: We will send the photos to this email address
+      download_title: Download Selected Files
+      email_prompt: "...or share by email:"
+      email_share: Send an email
+      ensure: Are you sure you want to delete this photo?
+      fb_connect: Connect Facebook
+      fb_connect_prompt: 'Please, connect your Facebook account first:'
+      fb_placeholder: Type here some text to share on Facebook
+      fb_title_text: Text for the post
+      no_worries: No worries.
+      not_recover: You will not be able to recover this photo!
+      photo_link: 'Photo Link:'
+      selected: selected
+      share: SHARING
+      sharing: Sharing, please wait...
+  simple_form:
+    error_notification:
+      default_message: 'Please review the problems below:'
+      user:
+        edit:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+        email: 
+        password: 
+    hints:
+      event:
+        edit:
+          cover_image: cover image
+          minimal_confidence: minimal confidence
+          photographer: 
+          took_place_on: took place on
+        event_translations:
+          edit:
+            description: description
+            long_description: 
+            name: name
+            pre_text: pre text
+          new:
+            description: description
+            long_description: 
+            name: name
+            pre_text: pre text
+        new:
+          cover_image: cover image
+          minimal_confidence: minimal confidence
+          photographer: 
+          took_place_on: took place on
+      publish_event_mails:
+        publish:
+          mail_list: 
+          title: 
+      temp_recognition:
+        edit:
+          email: email
+        new:
+          email: email
+      user:
+        after_auth:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+        album:
+          email: 
+        edit:
+          email: email
+          first_name: first name
+          last_name: last name
+          password: Leave blank unless updating password
+        new:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+    labels:
+      event:
+        new:
+          photographer: 
+      user:
+        after_auth:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+        album:
+          email: 
+        edit:
+          email: email
+          first_name: first name
+          last_name: last name
+          password: New password
+        new:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+    'no': 'No'
+    placeholders:
+      event:
+        edit:
+          cover_image: cover image
+          minimal_confidence: minimal confidence
+          photographer: 
+        event_translations:
+          edit:
+            description: description
+            long_description: 
+            name: name
+            pre_text: pre text
+          new:
+            description: description
+            long_description: 
+            name: name
+            pre_text: pre text
+        new:
+          cover_image: cover image
+          minimal_confidence: minimal confidence
+          photographer: 
+      publish_event_mails:
+        publish:
+          title: 
+      user:
+        after_auth:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+        edit:
+          email: email
+          first_name: first name
+          last_name: last name
+          password: password
+        email: you@example.com
+        new:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+        password: password
+    required:
+      html: <abbr title="required">*</abbr>
+      mark: "*"
+      text: required
+    'yes': 'Yes'
+  support:
+    am: 
+    array:
+      last_word_connector: ", and "
+      two_words_connector: " and "
+      words_connector: ", "
+    formats:
+      default: 
+      long: 
+      short: 
+    pm: 
+    share:
+      email:
+        come-on: Come on, you know you want to...
+        description: helps people find their photos in events.
+        hi: Hi
+        intro: We'd like to share some pictures of you from
+        no-signup: No signup required.
+        see-photos: See your photos!
+        see-photos-below: 'See your photos below:'
+        success: 
+      success: Email sent.
+    show:
+      confidence: 'Confidence:'
+      newsearch: New Search
+      sendemail: Send Email
+      title: Temp User Face Recognition Results for %s
+      updatesearch: Update this Search
+    time: 
+  temp_recognition:
+    create:
+      error: 'An error occurred: '
+      success: Add face images to find this person.
+    destroy:
+      success: Search deleted.
+    edit:
+      last-results: last results
+      show-casual-users: show casual users
+      title: 'Refresh Temp User Search in Event:'
+      update-search: update search
+    form:
+      addfaceimage: Add Face Image
+      removefaceimage: Remove Image
+      userfaces: User Faces
+    index:
+      lastresults: Last Results
+      newsearch: New Search
+      title: Temp User Searches
+      updatesearch: Update Search
+    new:
+      title: New Temp User Search
+    share:
+      email:
+        come-on: Come on, you know you want to...
+        description: helps people find their photos in events.
+        hi: Hi
+        intro: We'd like to share some pictures of you from
+        no-signup: No signup required.
+        see-photos: See your photos!
+        see-photos-below: 'See your photos below:'
+      success: Email sent.
+    show:
+      confidence: 'Confidence:'
+      newsearch: New Search
+      sendemail: Send Email
+      title: Temp User Face Recognition Results for %s
+      updatesearch: Update this Search
+    temp_face_images:
+      edit:
+        submit: Start Search
+        title: Search Temp User
+    update:
+      success: The search is being updated.
+  temp_recognitions/multiple: 
+  time:
+    am: am
+    formats:
+      default: "%a, %d %b %Y %H:%M:%S %z"
+      long: "%B %d, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm
+  unauthorized:
+    activerecord:
+      errors:
+        models:
+          face_image:
+            attributes:
+              image:
+                blank: 
+    default: Sorry, you are not authorized to access the requested page.
+    user:
+      signed_in: 
+      signed_up: 
+      updated: 
+  watermark:
+    photo_by: Photographed by
+    power_by: Powered by

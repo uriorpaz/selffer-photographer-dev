@@ -1,0 +1,13 @@
+toastr.success('<%= @amount %> photos selected as cover photos');
+$('#bg_photo_count').text('<%= @amount %>');
+gon.backgrounds = <%= @photos.pluck(:id) %>
+<% @changed_photos.each do |photo| %>
+  var bg_photo = $('#photo-<%=photo.id%>');
+  <% if photo.background %>
+    bg_photo.removeClass('category_2')
+    bg_photo.addClass('category_1')
+  <% else %>
+    bg_photo.removeClass('category_1')
+    bg_photo.addClass('category_2')
+  <% end %>
+<% end %>

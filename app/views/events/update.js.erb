@@ -1,0 +1,12 @@
+window.history.pushState(null, '', '<%= event_path(@event) %>');
+$('h1#event-name').html('<%= best_in_place @event, :name, :nil => 'Input event name' %>');
+$('h1#event-date').html('<%= best_in_place @event, :date, as: :date, display_as: :decorate_date, value: @event.decorate_date, inner_class: "date-picker" %>');
+$('#loading-indicator-event').hide();
+$('.best_in_place').click(function(){
+  setTimeout(function(){
+    $('.date-picker').change(function(){
+      $('.date-picker').datepicker('hide');
+      $('.form_in_place').submit();
+    })
+  }, 100);
+})

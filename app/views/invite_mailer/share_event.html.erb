@@ -1,0 +1,1 @@
+<%=@event.share_message.gsub('${link}',link_to('here!', event_guest_invite_url(@event.id, @guest_invite.code))).html_safe%>

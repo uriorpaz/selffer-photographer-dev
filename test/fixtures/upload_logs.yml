@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  event_id: 
+  start_at: 2016-02-25 11:22:32
+  end_at: 2016-02-25 11:22:32
+  photos_start_count: 1
+  error_logs_count: 1
+  duplicates_count: 1
+  photos_end_count: 1
+
+two:
+  event_id: 
+  start_at: 2016-02-25 11:22:32
+  end_at: 2016-02-25 11:22:32
+  photos_start_count: 1
+  error_logs_count: 1
+  duplicates_count: 1
+  photos_end_count: 1

@@ -1,0 +1,12 @@
+<tr id="row_<%= invite.id %>">
+  <td>
+    <%= invite.invited_email %>
+  </td>
+  <td>
+    <span class="label label-sm label-<%= invite.code ? 'warning' : 'success' %>">
+    <%= invite.status %> </span>
+  </td>
+ <td>
+    <%= link_to 'Remove', event_invite_path(event_id: @event.id, id: invite.id), remote: true, method: :delete, 'data-confirm' => "Are you sure?" %>
+  </td>
+</tr>

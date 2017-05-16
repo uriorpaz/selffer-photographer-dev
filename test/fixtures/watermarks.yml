@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  photographer_id: 
+  is_portrait: false
+  is_default: false
+  image_filename: MyString
+
+two:
+  photographer_id: 
+  is_portrait: false
+  is_default: false
+  image_filename: MyString

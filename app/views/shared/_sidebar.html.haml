@@ -1,0 +1,66 @@
+/ BEGIN SIDEBAR
+.page-sidebar-wrapper
+  / DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing
+  / DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed
+  .page-sidebar
+    / BEGIN SIDEBAR MENU
+    / DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders)
+    / DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode
+    / DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode
+    / DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing
+    / DOC: Set data-keep-expand="true" to keep the submenues expanded
+    / DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed
+    %ul.page-sidebar-menu
+      %li.start
+        = link_to 'javascript:;', id: 'edit-btn', data: {target: "#edit-event", toggle: "modal"} do
+          %i.fa.fa-edit
+          %span.title Edit
+      %li.start#li-publish
+        = link_to 'javascript:;', id: 'publish-btn', data: {target: "#publish-event", toggle: "modal"} do
+          %i.fa.fa-bullhorn
+          %span.title Publish
+      %li.start#li-preview
+        = link_to (@base_uri+event_path(@event)), id: 'preview-btn', toggle: "modal", target: "_blank" do
+          %i.fa.fa-eye
+          %span.title Preview
+      %li.start#li-invite
+        = link_to 'javascript:;', id: 'publish-btn', data: {target: "#publish-event", toggle: "modal"} do
+          %i.fa.fa-user-plus
+          %span.title Invite
+      %li.start#published
+        = link_to (@base_uri+event_path(@event)), id: 'publish-btn', toggle: "modal", target: "_blank" do
+          %i.fa.fa-eye
+          %span.title View
+
+-if !@event.is_published && @photos.present?
+  :javascript
+    $(function(){
+      $('#li-preview, #li-publish').css('display', 'inline-block');
+    })
+-elsif !@event.is_published && !@photos.present?
+  :javascript
+    $(function(){
+      $('#li-preview').css('display', 'inline-block');
+    })
+-elsif @event.is_published
+  :javascript
+    $(function(){
+      $('#li-invite').css('display', 'inline-block');
+      $('#published').css('display', 'inline-block');
+    })
+
+:javascript
+  $(function(){
+    $("#preview-btn").click(function(e){
+      var win = window.open('');
+      $.get("/events/#{@event.id}/set_backgrounds.json",
+        function(data){
+          if(data){
+            $('#bg_photo_count').text(data.covers_count);
+            win.location = "#{@base_uri + event_path(@event)}";
+          }
+        })
+      return false;
+    })
+  })
+

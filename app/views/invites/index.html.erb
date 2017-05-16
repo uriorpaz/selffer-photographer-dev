@@ -1,0 +1,52 @@
+<% content_for :sidebar do %>
+  <%= render 'shared/sidebar' %>
+<% end %>
+<h1>Invites</h1>
+<div class="row">
+  <div class="col-md-12">
+    <p>Create invite</p>
+    <%= form_for [@event, Invite.new] do |f| %>
+      <%= f.text_field :invited_email, placeholder: 'input email' %>
+      <%= f.submit 'send invite' %>
+    <% end %>
+    <br>
+    <% if @invites.present? %>
+      <div class="portlet box red">
+        <div class="portlet-title">
+          <div class="caption">
+            <i class="fa fa-cogs"></i>Invite Owner Table
+          </div>
+          <div class="tools">
+            <a href="javascript:;" class="collapse">
+            </a>
+          </div>
+        </div>
+        <div class="portlet-body">
+          <div class="table-scrollable">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>
+                     #
+                  </th>
+                  <th>
+                     Email
+                  </th>
+                  <th>
+                     Status
+                  </th>
+                  <th>
+                     Action
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <%= render @invites %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

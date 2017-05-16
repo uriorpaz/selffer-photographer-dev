@@ -1,0 +1,1136 @@
+he:
+  account:
+    destroy:
+      cancel: "בטל"
+      link: "מחק את חשבוני"
+      notice: "חשבונך יימחק."
+      prompt: "למחוק את החשבון שלך?"
+      submit: "כן, מחק את החשבון שלי"
+      warning: "חשבונך יימחק לצמיתות. לא ניתן לבטל פעולה זו."
+    edit:
+      link: "חשבון"
+  accounts:
+    connected: "הצלחה! חשבונך החברתי מחובר כעת."
+    edit:
+      link: "חברתי"
+    updated: "הצלחה! חשבונך החברתי מעודכן."
+  activerecord:
+    attributes:
+      admin:
+        created_at: 
+        current_sign_in_at: 
+        current_sign_in_ip: 
+        email: 
+        id: 
+        last_sign_in_at: 
+        last_sign_in_ip: 
+        password: 
+        password_confirmation: 
+        remember_created_at: 
+        reset_password_sent_at: 
+        reset_password_token: 
+        sign_in_count: 
+        updated_at: 
+      event:
+        archives: 
+        created_at: 
+        date: 
+        description: 
+        event_translations: 
+        event_type: 
+        facebook_share_text: 
+        guest_invites: 
+        guests: 
+        id: 
+        invites: 
+        is_published: 
+        long_description: 
+        name: 
+        needs_moderation: 
+        password: 
+        photographer: 
+        photos_count: 
+        place: 
+        pre_text: 
+        requires_password: 
+        send_notification: 
+        share_message: 
+        slug: 
+        slugs: 
+        status: 
+        tag_list: 
+        terms_of_use: 
+        updated_at: 
+        upload_logs: 
+        users: 
+        watermark_landscape: 
+        watermark_portrait: 
+      invite:
+        invited_id: 
+      user:
+        email: 
+        password: 
+    models:
+      admin: 
+      archive: 
+      authentication: 
+      error_log: 
+      event: 
+      event_translation: 
+      face_image: 
+      fb_album: 
+      guest_invite: 
+      invite: 
+      link: 
+      oauth_cache: 
+      photo: 
+      photographer: 
+      photos_share: 
+      possible_face: 
+      recognition: 
+      recognition_photo: 
+      share: 
+      shortener/shortened_url: 
+      subscriber: 
+      temp_face_image: 
+      temp_recognition: 
+      temp_recognition_photo: 
+      upload_log: 
+      user: 
+      watermark: 
+  admin:
+    actions:
+      show_in_app:
+        title: 
+    help:
+      event:
+        archives: 
+        date: 
+        description: 
+        event_translations: 
+        event_type: 
+        facebook_share_text: 
+        guest_invites: 
+        guests: 
+        invites: 
+        is_published: 
+        long_description: 
+        name: 
+        needs_moderation: 
+        password: 
+        photographer: 
+        photos_count: 
+        place: 
+        pre_text: 
+        requires_password: 
+        send_notification: 
+        slug: 
+        status: 
+        terms_of_use: 
+        upload_logs: 
+        users: 
+        watermark_landscape: 
+        watermark_portrait: 
+    new:
+      tag_list_help: 
+  archive_mailer:
+    generate_file_started:
+      subject: 
+    send_file:
+      link: "לחצו להורדת התמונות"
+      subject: "התמונות שלך מ-Selffer מוכנות להורדה"
+      text_before: "ניתן להורדי את התמונות שביקשת מהקישור הבא:"
+  auth:
+    before_connect: "אתה קודם כל צריך"
+    confirm:
+      link: "אני צריך לאשר את החשבון שלי"
+      submit: "שלח מחדש הוראות אישור"
+    connect: "התחבר"
+    destroy:
+      cancel: "בטל"
+      link: "התנתק"
+      notice: "החשבון החברתי ינותק מחשבון הסלפפר שלך. תוכל לחבר אותו מחדש בכל עת."
+      prompt: "נתק חשבון זה?"
+      submit: ". כן, נתק חשבון"
+      tooltip: "נתק חשבון רשת חברתית ומחק את הנתונים שלו"
+      warning: "למחוק?"
+    edit:
+      link: "חברתי"
+    error:
+      oops: "אופסס!"
+      wrong: "משהו בלתי צפוי קרה. אנא נסה שוב."
+    forgot:
+      link: "שכחתי את הסיסמה שלי"
+      prompt: "שכחת סיסמה?"
+      submit: "שלח הוראות לשחזור סיסמה"
+    links:
+      title: "עזרה עם החשבון"
+    login:
+      link: "כניסה"
+      link_with: "כניסה באמצעות ‎%{provider}‎"
+      title: "בבקשה היכנס לאתר או ‎%{signup_link}‎"
+    logout:
+      link: "התנתק"
+    reconnect:
+      link: "עדכן"
+      tooltip: "עדכן נתוני רשתות חברתיות"
+    reset:
+      invalid_message: "אישור הכניסה שלך פג. כדי להגן על ביטחונך, שלח שוב את הוראות הסיסמה ונסה שוב."
+      invalid_title: "אין אפשרות לאפס את הסיסמה"
+      link: "שנה סיסמה"
+      submit: "אפס סיסמה"
+    signup:
+      email_taken: חשבון עם הדוא"ל שלך כבר קיים. ‎%{login_link}‎
+      help: "רשום כבר? ‎%{login_link}‎"
+      link: "הירשם"
+      title: "הירשם"
+    unlock:
+      link: "החשבון שלי נעול"
+      submit: "שלח מחדש ההוראות פתיחה"
+  brand:
+    name: Selffer
+  date:
+    abbr_day_names:
+    - "א"
+    - "ב"
+    - "ג"
+    - "ד"
+    - "ה"
+    - "ו"
+    - "ש"
+    abbr_month_names:
+    - 
+    - "יאנ"
+    - "פבר"
+    - "מרץ"
+    - "אפר"
+    - "מאי"
+    - "יונ"
+    - "יול"
+    - "אוג"
+    - "ספט"
+    - "אוק"
+    - "נוב"
+    - "דצמ"
+    day_names:
+    - "ראשון"
+    - "שני"
+    - "שלישי"
+    - "רביעי"
+    - "חמישי"
+    - "שישי"
+    - "שבת"
+    formats:
+      default: "%d-%m-%Y"
+      long: "%e ב%B, %Y"
+      short: "%e %b"
+    month_names:
+    - 
+    - "ינואר"
+    - "פברואר"
+    - "מרץ"
+    - "אפריל"
+    - "מאי"
+    - "יוני"
+    - "יולי"
+    - "אוגוסט"
+    - "ספטמבר"
+    - "אוקטובר"
+    - "נובמבר"
+    - "דצמבר"
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: "בערך שעה אחת"
+        other: "בערך %{count} שעות"
+      about_x_months:
+        one: "בערך חודש אחד"
+        other: "בערך %{count} חודשים"
+      about_x_years:
+        one: "בערך שנה אחת"
+        other: "בערך %{count} שנים"
+      almost_x_years:
+        one: "כמעט שנה"
+        other: "כמעט %{count} שנים"
+      half_a_minute: "חצי דקה"
+      less_than_x_minutes:
+        one: "פחות מדקה אחת"
+        other: "פחות מ- %{count} דקות"
+        zero: "פחות מדקה אחת"
+      less_than_x_seconds:
+        one: "פחות משניה אחת"
+        other: "פחות מ- %{count} שניות"
+        zero: "פחות משניה אחת"
+      over_x_years:
+        one: "מעל שנה אחת"
+        other: "מעל %{count} שנים"
+      x_days:
+        one: "יום אחד"
+        other: "%{count} ימים"
+      x_minutes:
+        one: "דקה אחת"
+        other: "%{count} דקות"
+      x_months:
+        one: "חודש אחד"
+        other: "%{count} חודשים"
+      x_seconds:
+        one: "שניה אחת"
+        other: "%{count} שניות"
+    prompts:
+      day: "יום"
+      hour: "שעה"
+      minute: "דקה"
+      month: "חודש"
+      second: "שניות"
+      year: "שנה"
+  devise:
+    confirmations:
+      confirmed: "חשבונך אושר בהצלחה. אנא התחבר."
+      confirmed_and_signed_in: "חשבונך אושר בהצלחה ונכנסת למערכת."
+      send_instructions: בעוד כמה דקות תקבל דוא"ל עם הוראות לאישור חשבונך.
+      send_paranoid_instructions: אם כתובת הדוא"ל שלך קיימת במאגר שלנו, תקבל תוך כמה דקות הוראות לאישור חשבונך.
+    failure:
+      already_authenticated: "אתה כבר בתוך המערכת."
+      inactive: "החשבון שלך עוד לא הופעל."
+      invalid: דוא"ל או סיסמה שגויים.
+      invalid_token: "פריט אימות לא חוקי."
+      locked: "החשבון שלך נעול."
+      not_found_in_database: דוא"ל או סיסמה שגויים.
+      timeout: "הכניסה של פגה. אנא התחבר שוב על מנת להמשיך."
+      unauthenticated: "יש להתחבר לפני שתמשיך."
+      unconfirmed: "עליך לאשר את חשבונך לפני שתמשיך."
+    mailer:
+      confirmation_instructions:
+        subject: "הוראות לאישור חשבון"
+      reset_password_instructions:
+        photographer_subject: 
+        subject: "הוראות לאיפוס סיסמה"
+      unlock_instructions:
+        subject: "הוראות לשחרור חשבון."
+    omniauth_callbacks:
+      failure: "לא ניתן לאמת אותך ב ‎%{kind}‎ מהסיבה ‎%{reason}‎"
+      success: "אימות מוצלח מחשבון ‎%{kind}‎"
+    passwords:
+      no_token: לא ניתן לגשת לעמוד זה אלא מדוא"ל איפוס סיסמה. אם באת מדוא"ל איפוס סיסמה, אנא וודא שהשתמשת בלינק המלא מהדוא"ל.
+      send_instructions: בעוד מספר דקות תקבל דוא"ל עם הוראות איפוס סיסמה.
+      send_paranoid_instructions: אם הדוא"ל שלך קיים במאגר שלנו, תקבל דוא"ל עם לינק לאיפוס סיסמה בעוד מספר דקות.
+      updated: "סיסמתך שונתה בהצלחה. אתה בתוך המערכת."
+      updated_not_active: "סיסמתך שונתה בהצלחה."
+    registrations:
+      destroyed: "מחקנו את חשבונך. תודה שהתנסית."
+      signed_up: "ברוך הבא! נרשמת בהצלחה."
+      signed_up_but_inactive: "נרשמת בהצלחה. עם זאת, לא יכולנו להכניסך למערכת כי חשבונך עוד לא הופעל."
+      signed_up_but_locked: "נרשמת בהצלחה. עם זאת, לא יכולנו להכניסך למערכת עי חשבונך נעול."
+      signed_up_but_unconfirmed: דוא"ל עם לינק לאישור החשבון נשלח לכתובתך. לחץ על הלינק לאישור החשבון.
+      update_needs_confirmation: עדכנו בהצלחה את חשבונך, אך עלינו לוודא את כתובת הדוא"ל החדשה שלך. אנא בדוק דוא"ל ולחץ על לינק האישור על מנת לאשר את השינוי.
+      updated: "עדכנו את חשבונך בהצלחה."
+    sessions:
+      signed_in: "ברוך הבא."
+      signed_out: "יצאת מהמערכת."
+    unlocks:
+      send_instructions: בעוד כמה דקות תקבל דוא"ל עם הוראות לשחרור חשבונך.
+      send_paranoid_instructions: אם חשבונך קיים, תקבל בעוד כמה דקות דוא"ל עם הוראות לשחרור החשבון.
+      unlocked: "החשבון שלך שוחרר בהצלחה. אנא התחבר על מנת להמשיך."
+  domain:
+    back: "חזור"
+    confirm: "אתה בטוח?"
+    created: "נוצר"
+    date: "תאריך"
+    delete: "מחק"
+    description: 
+    destroy: "מחק"
+    edit: "ערוך"
+    email: דוא"ל
+    event: "אירוע"
+    events: "אירועים"
+    find-me: "מצא אותי"
+    lang: "שפה"
+    lang_code: "הזן קוד שפה (לדוגמה, ru)"
+    logo: 
+    long_description: 
+    mail-list: 
+    mail-title: 
+    my-faces: "הפנים שלי"
+    name: "שם"
+    none: "אף אחד"
+    phone: 
+    photographers: 
+    photos: "תמונות"
+    pre-text: 
+    results: "תוצאות"
+    save: "שמור"
+    search: "חפש"
+    select-date: "בחר תאריך"
+    show: "הצג"
+    temp-user-searches: "חיפוש משתמש זמני"
+    update: "עדכן"
+    website: 
+  emails:
+    share:
+      body: |-
+        מישהו שיתף איתך תמונות מהאירוע "%{event_name}"
+        האירוע צולם ע"י %{photographer_name} %{photographer_website}
+
+        לצפייה בתמונות לחץ על הקישור הבא: %{photos_link}
+      mobile:
+        body: |-
+          הי!
+
+          הנה כמה תמונות מהאירוע של %{event_name} שצולם ע"י %{photographer_name}
+          %{share_url}
+          כל אחד יכול לראות את התמונות של עצמו מהאירוע בקלות באמצעות Selffer
+        subject: "תמונות מהאירוע של %{event_name}"
+      subject: תראה כמה תמונות מדהימות מהאירוע "%{event_name}"
+    temp_recognition:
+      subject: "הנה התמונות שלך מהאירוע!"
+    welcome:
+      body: 
+      subject: "ברוכים הבאים לסלפפר"
+  en:
+    invite:
+      send_invite:
+        subject: 
+    shared:
+      recognition_popups:
+        ensure: 
+        not_recover: 
+  errors:
+    format: "%{attribute} %{message}"
+    messages:
+      accepted: "חייב באישור"
+      already_confirmed: "כבר אושר, אנא נסה להיכנס"
+      blank: "לא יכול להיות ריק"
+      confirmation: "לא תואם לאישורו"
+      confirmation_period_expired: "צריך להיות מאושר בתוך ‎%{period}‎, אנא בקש חדש"
+      empty: "לא יכול להיות ריק"
+      equal_to: "חייב להיות שווה ל- %{count}"
+      even: "חייב להיות זוגי"
+      exclusion: "לא זמין"
+      expired: "פג תוקף, אנא בקש אחד חדש"
+      greater_than: "חייב להיות גדול מ- %{count}"
+      greater_than_or_equal_to: "חייב להיות גדול או שווה ל- %{count}"
+      inclusion: "לא נכלל ברשימה"
+      invalid: "לא תקין"
+      less_than: "חייב להיות קטן מ- %{count}"
+      less_than_or_equal_to: "חייב להיות קטן או שווה ל- %{count}"
+      not_a_number: "חייב להיות מספר"
+      not_an_integer: "חייב להיות מספר שלם"
+      not_found: "לא נמצא"
+      not_locked: "לא היה נעול"
+      not_saved:
+        one: "שגיאה ‎%{count}‎ מנעה את שמירת ‎‎‎%{resource}‎:"
+        other: "‎%{count}‎ שגיאות מנעו מנעו את שמירת ‎%{resource}‎"
+      odd: "חייב להיות אי זוגי"
+      record_invalid: "האימות נכשל: %{errors}"
+      taken: "כבר בשימוש"
+      too_long: "יותר מדי ארוך (לא יותר מ- %{count} תוים)"
+      too_short: "יותר מדי קצר (לא יפחות מ- %{count} תוים)"
+      wrong_length: "לא באורך הנכון (חייב להיות %{count} תוים)"
+    template:
+      body: "אנא בדוק את השדות הבאים:"
+      header:
+        one: "לא ניתן לשמור את ה%{model}: שגיאה אחת"
+        other: "לא ניתן לשמור את ה%{model}: %{count} שגיאות."
+    unknown: ". אופס! משהו השתבש. נא נסה שוב."
+  event:
+    actions:
+      always_show: "נעוץ"
+      cover: Cover
+      delete: Delete
+      in_album: "אלבום"
+      private: "הסתר"
+      share: "שתף"
+    already_subscribed: "כתובת האימייל כבר בשימוש באירוע"
+    blank_email: "נא להזין כתובת האימייל"
+    create:
+      created: "האירוע נוצר בהצלחה"
+      error: "אירעה שגיאה ביצירת האירוע"
+    delete:
+      deleted: "האירוע נמחק"
+    edit-event: "ערוך נתוני אירוע"
+    email-details: "נשלח לאימייל הזה רק עדכונים לגבי תמונות שלכם מאירוע זה."
+    email-text: "כתובת אימייל"
+    event-date: "תאריך אירוע"
+    filters:
+      album: "תמונות שנבחרו לאלבום (%{number})"
+      all_photos: "כל התמונות (%{number}) "
+      categories:
+        album: Album
+        pivate: Private
+        your_photos: "התמונות שלך "
+      click_to_see: "לחץ לחיפוש"
+      cover: Cover photos (%{number})
+      not_approved: Not approved yet (%{number})
+      private: "מוסתרות - רק את/ה רואה (%{number})"
+      shares: "תמונות ששיתפו איתך  (%{number})"
+      showing_all: "כל התמונות (%{number})"
+      showing_only: "%{category} (%{number})"
+      your_photos: "התמונות שלך (%{number})"
+    form:
+      at: "תאריך"
+      photos:
+        addfiles: "הוסף קבצים"
+        cancelupload: "בטל העלאה"
+        delete: "מחק"
+        dropmessage: "גרור קבצים לכאן..."
+        startupload: "התחל להעלות"
+        title: "תמונות אירוע"
+      post: "פרסם"
+      update: "עדכן"
+    found_your_photos: "מצאנו את התמונות שלך"
+    fuzzy_photo: "לא הצלחנו לזהות פנים בתמונה. נא להשתמש בתמונה באיכות גבוהה יותר. גם חיוך תמיד עוזר :)"
+    new-event: "אירוע חדש"
+    no_image: "לא זיהינו פנים בתמונה. נסו תמונה נוספת."
+    no_photo_uploaded: "לא הועלתה תמונה!"
+    not_you: "לא אתה?"
+    one_detected: "בתמונה יש יותר מאדם אחד. נסו תמונה עם אדם אחד בלבד."
+    open-camera: "צילום סלפי"
+    photographed_by: "צולם ע״י %{photographer_name}"
+    recognition_popup:
+      continue: "צפה בכל האלבום"
+      search:
+        main: "חפש תמונות שלך עם סלפי"
+        sub: "צלם סלפי ואנחנו נמצא את התמונות שלך"
+      waiting_search_text: Searching for your photos, this might take a few seconds
+      waiting_text: "החיפוש יכול לקחת עד 30 שניות"
+      waiting_upload_text: Uploading your selfie
+    selfie-details: "אנחנו משתמשים בתמונה הזו כדי למצוא את התמונות שלך מהאירוע. לא לשכוח לחייך :)"
+    selfie-text: "צלם סלפי"
+    shared:
+      recognition_popups:
+        ensure: 
+        not_recover: 
+    show-events: "מצא אירועים"
+    sign_up: "הרשמה לקבלת תמונות"
+    sign_up_btn: "שמור"
+    signup_first: Please, sign up with your email first
+    subscribe: "הרשמה"
+    take-selfie: TAKE A SELFIE (OPTIONAL)
+    thanks-email: "תודה, נעדכן אותך ברגע שתמונות חדשות יתווספו לאירוע"
+    thanks-selfie: "תודה, נעדכן אותך ברגע שתמונות חדשות שלך יתווספו לאירוע"
+    thanks_for_upload: Thanks!
+    update:
+      error: "אירעה שגיאה בעדכון האירוע"
+      updated: "האירוע עודכן בהצלחה"
+    update-event: "עדכן נתוני אירוע"
+    wrong_email_format: Wrong email format!
+  events:
+    album:
+      fb_title_text: "טקסט לשיתוף בפייסבוק"
+    gallery:
+      back: "אחורה"
+      cancel: "בטל"
+      click_face: "בחרו את הפנים שלכם<br/> מהתמונות למטה"
+      click_here: "לחצו כאן"
+      complete: "המשך"
+      completely_miss: "אתם לא כאן בכלל?"
+      delete: "מחק מהאוסף שלי"
+      downloads: "הורדה"
+      enter_email: "הכנס כתובת אימייל"
+      enter_password: "הזן סיסמה"
+      find_your_photos: 
+      first_load:
+        advise_1: "טיפים לשיפור הביצועים:"
+        advise_2: 1. לחייך קצת :-)
+        advise_3: 2. וודא שיש תאורה טובה
+        advise_4: 3. פנים ישרות מול המצלמה
+        sorry_no_image: "סליחה, לא נמצאו תמונות עדין"
+        you_can_try: "נסה שוב. לפעמים צריך לנסות כמה פעמים עד שמוצאים תמונות"
+      first_visit_details: Take a selfie, and let Selffer find your photos, see photos with friends, and get notified when new photos you're in are added to the album.
+      found: "תמונות נמצאו"
+      get_notified: "חיפוש אוטומטי"
+      incorrect_password: Incorrect Password!
+      make_yours: Make this album yours
+      multiple: "תלחץ על הפנים שלך"
+      not_here: "אני לא כאן"
+      not_sure: "אנחנו לא בטוחים..."
+      notification_details: "עכשיו כשמצאנו את התמונות שלך, נוכל גם להודיע<br>לך כאשר תמונות חדשות שלך יתווספו<br>לאלבום"
+      notify_me: "שלח"
+      password_details: "בכדי לצפות באלבום %{event} יש להזין סיסמה.<br>הסיסמה נשלחה אליך דרך מנהל המערכת."
+      password_required: "זהו אלבום פרטי"
+      second_load:
+        advise_1: "טיפים - וודא שהפנים לא מוסתרות:"
+        advise_2: 1. הסר משקפי שמש
+        advise_3: 2. הסר את הכובע
+        advise_4: 3. וודא שהשיער לא מסתיר את הפנים
+        sorry_no_image: "אופססס!  קשה למצוא אותך"
+        you_can_try: "אל ייאוש. בוא ננסה עוד פעם אחת"
+      share: "שתף את התמונות הנבחרות"
+      sorry_no_image: 
+      submit_password: "אישור"
+      success_details: "נעדכן אותך בכתובת האימייל שהזנת ברגע<br> שנזהה תמונות חדשות שלך באלבום."
+      success_notified: "קיבלנו!"
+      terms_of_use: "תנאי השימוש"
+      terms_of_use_agreeing: "על ידי כניסה לאלבום, את/ה מאשר/ת את"
+      terms_of_use_text: Selffer מתחייבת לא לעשות שימוש שיווקי או מסחרי בתמונות המופיעות באלבום.
+      thanks_subscriber: "טוב, תודה"
+      third_load:
+        additional_text: 
+        get_link_text: "רוצה לקבל את התמונות שלך מהאירוע לטלפון? מהיום אפשר! מלא כתובת מייל והתמונות ישלחו אליך."
+        input_email_or_phone: "הקלד כתובת מייל או מספר טלפון..."
+        inputemail: "  כתובת המייל שלך.."
+        sendemail: "שלח"
+        sign_up: 
+        sorry_no_image: "באסה! לא מצאנו את התמונות שלך עדין"
+        you_can_try: "מלא את המייל שלך כאן ונשלח לך את התמונות ברגע שנמצא אותן, או שתנסה שוב"
+      try_now: Try It Now!
+      wait: "רק שניה, אנחנו מחפשים את התמונות שלך"
+      watch_album: 
+      you_can_try: 
+    identify:
+      invitation: |-
+        העלה תמונת פנים שלך ו-Selffer תמצא את התמונות שאתה מופיע בהן מהאירוע הזה!
+        <br>
+        ניתן לצלם סלפי או להעלות תמונה
+      photo: "העלה תמונה שלך"
+      photo_opt:
+        make_sure: "בבקשה וודא שהתמונה ברורה ושהפנים ישרות ואינן בזווית"
+        take: "לחץ לצילום"
+        why: "באמצעות תמונה שלך אנחנו יכולים לאתר במהירות את התמונות שלך מתוך האירוע"
+      selfie: "צלם תמונה שלך"
+      selfie_opt:
+        make_sure: "בבקשה וודא שהתמונה ברורה ושהפנים ישרות ואינן בזווית"
+        why: "באמצעות תמונה שלך אנחנו יכולים לאתר במהירות את התמונות שלך מתוך האירוע"
+      show_prompt: "תראה לנו איך אתה נראה"
+      step: "רוצה לראות תמונות שאתה מופיע בהן?"
+      watch_all: "צפה בכל האלבום"
+    show:
+      loading_text: "האירוע שלכם בהכנה, זה יכול לקחת כמה שניות"
+      photos: "צפייה באלבום"
+      preview_feature: "כדי לצפות בתמונות, קודם כל צריך לפרסם את האירוע"
+      preview_function: 
+      preview_only: preview only
+      publish: publish photos
+    subscriber:
+      subscriber_mail_body: "מצאנו תמונות חדשות שלך מהאירוע %{event_name}!\nכל התמונות שלך, כולל החדשות, נמצאות כאן: \n%{link}"
+      subscriber_mail_subject: "מצאנו תמונות חדשות שלך מהאירוע %{event_name}"
+  face:
+    form:
+      addface: "הוסף תמונת פנים"
+      search-temp-faces: "חפש פנים אלה:"
+      updatefaces: "עדכן את תמונות הפנים שלי"
+    index:
+      addfaces: "אנא הוסף כמה תמונות של הפנים שלך."
+      save-photo: "שמור תמונה"
+      take-photo: "צלם תמונה"
+      take-your-photo: "צלם תמונה ממצלמת המחשב:"
+      title: "הפנים שלי"
+      upload-temp-photos: "העלה תמונות פנים:"
+      uploadphotos: "... או העלה תמונות פנים שלך:"
+  facebook_share:
+    album_name: "התמונות שלי מ-%{event_name}"
+    copyright: " "
+    popups:
+      shared:
+        error_message: "אין לאפליקציה אישור לשתף תמונות על הקיר שלך, אנא אשר את ההרשאה במסך הבא"
+        message: "התמונות שלך שותפו"
+        title: "סיימת!"
+  fb_title_text: 
+  general:
+    back-home: "חזור לדף הבית"
+    facebook: "פייסבוק"
+    google-plus: "גוגל +"
+    phone: "טלפון"
+    privacy: "פרטיות"
+    terms: "תנאי שימוש"
+    twitter: "טוויטר"
+    unsubscribe: "הסר"
+  helpers:
+    select:
+      prompt: "נא לבחור"
+    submit:
+      create: "%{model} יצירת"
+      submit: "%{model} שמור"
+      update: "%{model} עדכון"
+      user:
+        create: "הירשם"
+        update: "עדכן חשבון"
+  invite:
+    send-invite:
+      invite: 
+    send_invite:
+      subject: "התמונות מהאירוע של %{event_name} הגיעו!"
+  invite_mailer:
+    create:
+      subject: 
+    send_invite:
+      subject: "התמונות מהאירוע של %{event_name} הגיעו!"
+  layouts:
+    login_popup:
+      all_photos: "רוצה לראות את כל התמונות שלך?<br/>בהרשמה פעם אחת, אנחנו נודיע לך ברגע שיעלו תמונות נוספות שלך לאירוע הזה"
+      invitation: "קבל הזמנה"
+      sign_up: "הרשמה"
+      validation:
+        name: "הכנס שם משתמש"
+        password: "הכנס סיסמא"
+    r_design_navigation:
+      about_us: "אודות"
+      admin_mode: "מחוברים כבעלי האירוע"
+      all_photos: "אלבום כללי"
+      back: "חזרה לאלבום"
+      back_html: "&rarr; לאלבום"
+      coming_soon: change_text
+      contact: "צור קשר"
+      download_album: "הורדת כל התמונות"
+      empty_friend: "רוצה לראות תמונות של חברים שלך מהאלבום?"
+      empty_me: "בשביל למצוא את התמונות שאת/ה מופיע/ה בהן, אנחנו צריכים סלפי"
+      find_selfie: To magically find your friend's photos
+      first_view: "רוצה לראות תמונות שלך מהאירוע? לחצו כאן"
+      friends: "חברים"
+      friends_search_tag: "ואנחנו נמצא תמונות של חברים שלך"
+      friends_share_text: "מכירים? שתפו את התמונות:"
+      friends_text: "שלח לחברים את התמונות שלהם :)"
+      home: "בית"
+      loading_photos: Loading new set of photos...
+      log_in: 
+      log_out: "צא"
+      me: "תמונות שלי"
+      me_search_tag: "ואנחנו נמצא את כל התמונות שלך"
+      moderation: Approve Up to Here
+      more: "עוד >"
+      more_photos: See more photos
+      my_photos: "אלבום שלי"
+      no_more_photos: No more photos
+      photos: "תמונות"
+      search_selfie: "צלמו או העלו תמונת סלפי"
+      see_more: "עוד"
+      select: "בחר"
+      share: "שיתוף"
+      sign_up: "הרשמה"
+      t_and_p: "תנאים שימוש ופרטיות"
+      take_selfie: TAKE A SELFIE
+    r_design_popups:
+      about: "אודות"
+      another_selfie: "צילום סלפי מחדש"
+      archive_started: "הקבצים ישלחו תוך מספר דקות לכתובת המייל"
+      before_link: "הקישור להורדת הקבצים מוכן:"
+      busy: "אנחנו בדיוק מסיימים לעבוד על עוד יישום מגניב ונחזור אליך בהקדם האפשרי"
+      contact_thanks: "תודה שפנית אלינו"
+      contact_us: "צור קשר"
+      download_album: Download Album
+      download_success_text: "הקישור להורדת התמונות ישלח ל %{email_address}. הפעולה הזו יכולה להימשך מספר רגעים."
+      download_success_text_one: "הורדה"
+      download_success_text_two: "הורדה"
+      download_success_title: "בקשה להורדת תמונות הצליחה"
+      email: דוא"ל
+      message: "הודעה"
+      name: "שם"
+      oops_title: "אופס, בעיה קטנה"
+      phone: "טלפון"
+      send: "שלח"
+      send_message: "שלח לנו הודעה ונחזור אליך בהקדם האפשרי"
+      share_email_cancel_button: "בטל"
+      share_email_confirm_button: "שלח"
+      share_email_required_email: "מלא את כתובת המייל אליה תרצה לשלוח את התמונות"
+      share_email_text: "מלא את כתובת הדוא״ל אליה אתה מעוניין לשלוח את התמונות"
+      share_email_title: "שליחה לדוא״ל"
+      share_email_wrong_format: "כתובת המייל אינה חוקית. נסה שוב"
+      share_success_text: "התמונות נשלחו לכתובת המייל"
+      share_success_text_one: "קישור להורדת התמונות ישלח בהקדם למייל שציינת"
+      share_success_text_two: "התמונות נשלחו בהצלחה לכתובת המייל שציינת"
+      share_success_title: " שליחה למייל הצליחה"
+      short_explanation: "עם חיוך זה עובד יותר טוב ;)"
+      short_explanation_sub: "קבלו עדכון בכל פעם שתמונה חדשה שלכם תופיע"
+      subject: "נושא"
+      subscribe: "הרשמה לקבלת תמונות"
+      success_title: "הצלחה!"
+      t_and_p: "תנאי שימוש ופרטיות"
+      terms: "תנאי שימוש"
+      who_we_r: "אנחנו כמה חבר'ה שנתקלו בכמה בעיות עם תמונות מאירועים שהיינו בהם.<br>בתור בעלי אירוע היה לנו מסובך מידי לשתף את כל התמונות עם כל האורחים שלנו ובתור אורחים באירועים אף פעם לא קיבלנו את התמונות שלנו ☹"
+      who_we_r_why: "לכן פיתחנו את Selffer - הדרך המושלמת והקלה ביותר לשתף את התמונות עם כל האורחים באירוע"
+  number:
+    currency:
+      format:
+        delimiter: ","
+        format: "%u %n"
+        precision: 2
+        separator: "."
+        significant: false
+        strip_insignificant_zeros: false
+        unit: "₪"
+    format:
+      delimiter: ","
+      precision: 3
+      separator: "."
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: "%n %u"
+        units:
+          billion: "מיליארד"
+          million: "מיליון"
+          quadrillion: "קודריליון"
+          thousand: "אלף"
+          trillion: "טריליון"
+          unit: 
+      format:
+        delimiter: 
+        precision: 3
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: "%n %u"
+        units:
+          byte:
+            one: "בייט"
+            other: "בתים"
+          gb: "ג'יגה-בייט"
+          kb: "קילו-בייט"
+          mb: "מגה-בייט"
+          tb: "טרה-בייט"
+    percentage:
+      format:
+        delimiter: 
+    precision:
+      format:
+        delimiter: 
+  pages:
+    error:
+      body: "המהנדסים שלנו קיבלו הודעה והם עובדים על הבעיה. מצטערים על אי הנוחות."
+      title: "אופס... הגעת לפה כי הייתה לנו שגיאה."
+    home:
+      get-started: "התחל!"
+      title-tagline: "מצא את עצמך באירועים"
+    r_design_home:
+      title:
+        contact: 
+        empower: "התמונות"
+        photos: "מאירועים"
+        solution: "פתרון פשוט וידידותי שבאמצעות כל האורחים באירוע <br/> מקבלים באופן אוטומטי את התמונות שבהן הם מופיעים."
+        your: "שלך"
+  photographer_client:
+    drag_folder_restrict: |-
+      העלאת תיקיות שלמות לא נתמכת בדפדפן שלך.
+      ניתן לבצע זאת באמצעות דפדפן Chrome
+    email_invite_blank: 
+    email_invite_message: "שלום,\n\nסטודיו הצילום %{studio_name} נתן לכם במתנה את אפליקציית הווב Selffer שמאפשרת לכל אחד לראות את התמונות של עצמו מהאירוע בקלות :-)\nֿפשוט מצלמים סלפי של עצמכם והמערכת אוטומטית מוצאת את כל התמונות בהן אתם מופיעים.\n\nפעולות שרק אתם כבעלי האירוע יכולים לבצע:\n1. לבצע הורדה של התמונות למחשב באיכות מלאה.\n2. לסמן תמונות שאתם רוצים לסדר באלבום. \n3. לסמן תמונות כ״פרטיות״ כך שרק אתם תראו אותם ושאר הצופים באלבום לא יראו אותן.\n\nלצפייה בתמונות לחצו על הקישור מטה והזינו שם משתמש וסיסמא.\n\nלכל שאלה, אתם מוזמנים להתקשר אלינו ב-050-5850022 (אורי) או להשיב למייל זה.\n\nמזל טוב!\nצוות Selffer"
+    email_invite_subject: "התמונות מהאירוע של %{event_name} הגיעו!"
+    email_photos_url_generating: |-
+      היי,
+
+      התמונות שביקשת להוריד מהאירוע של %{event_name} ישלחו אליך לאימייל הזה.
+
+      **זה יכול לקחת עד שעתיים, תלוי בכמות התמונות**
+
+      בברכה,
+
+      צוות Selffer
+    email_photos_url_generating_title: "הורדת התמונות מהאירוע של %{event_name}"
+    email_with_photos_url: |+
+      היי,
+
+      להורדת התמונות מהאירוע של %{event_name} לחץ על הקישור בתחתית המייל.
+
+      בברכה,
+
+      צוות Selffer
+
+
+    email_with_photos_url_title: "התמונות מהאירוע של %{event_name} מוכנות להורדה"
+    event_name_required: "שם האירוע - שדה חובה"
+    info_popup_text: "תפריט actions:\n<br/>\nDownload photos - מאפשר לבחור תמונות ולהוריד אותן ברזולוציה מקורית למחשב. <br/>\nChoose cover photos - בחירת תמונות הרקע אשר יופיעו בעמוד הראשי של האירוע כפי שבעלי השמחה והאורחים יראו אותו <br/>\nDelete photos - מחיקת תמונות (לא ניתן לשזר) <br/>\nDelete event - המחיקת האירוע באופן מלא (לא ניתן לשחזר) <br/>\n\nתפריט תמונות לפי קטגוריות: <br/>\nניתן לצפות בכל התמונות בגלריה אחת ארוכה ולחילופין ניתן לצפות בתמונות לפי תיוגים שונים <br/>\ncover photos - תמונות שנבחרו לתמונות הרקע שיופיע בעמוד הרשאי של האירוע <br/>\nprivate photos - תמונות שאתם או הלקוח שלכם סימן כפרטיות. המשמעות של ״פרטיות״ היא שרק אתם או הלקוח שלכם תראו את התמונות האלו אך שאר האנשים שיצפו בתמונות מהאירוע לא יוכלו לראות את התמונות האלו. <br/>\npublic photos - זה למעשה כל התמונות שאינן ״פרטיות״. את כל התמונות האלו אנשים שצופים באלבום יוכלו לראות <br/>\nlike - תמונות שאתם או הלקוח סימן שאתם אוהבים. תמונות אלו יקבלו עדיפות גבוהה יותר והן יוצגו בראש הגלריה שהאורחים רואים. <br/>\nphotos for album - תמונות שהלקוח שלכם סימן שהוא רוצה שיכנסו לתוך האלבום שאתם מכינים לו. <br/>\n<br/>\n<br/>\n\nטיפים: <br/>\n1. ניתן לבצע הורדה של כל התמונות שנמצאות תחת תיוג אחת בקלות. כאשר אתם נמצאים למשל תחת תיוג של \"photos for album״ אתם יכולים ללחוץ על download ואז ללחוץ select all וזה פשוט יוריד לכם את כל התמונות שהלקוח בחר ישירות למחשב שלכם. <br/>\n\n2. העלאת מספר תיקיות בבט אחת. אם יש לכם למשל תיקיה שנקראת ״החתונה של אבי ואלה״ ובתוך התיקייה הזו יש 4 תיקיות משנה, אתם פשוט גוררים (drag&drop) את התיקייה לדפדן וזה אוטומטית יעלה את כל התמונות שנמצאות תחת כל התיקיות. <br/>\n***זה עובד רק בדפדפן chrome*** \n<br/>\n3. תיוג של התמונות כמו התיקיות שעל המחשב שלכם. כבר חילקת את התמונות של האירוע לתיקיות: ״התארגנות״, ״קבלת פנים״, ״חופה״, ״ריקודים״ וכו׳.. אין בעיה! פשוט תעלו את התמונות כמו שתיארנו בסעיף 2 והתמונות יתויגו אוטומטית עם שם התיקייה שלהם.  <br/>\n***זה עובד רק בדפדפן chrome***\n<br/>\n<br/>\nלכל שאלה נוספת, רעיון חדש שיכול לעזור לכם כאן או סתם אם בא לכם להגיד שלום אתם מוזמנים ללחוץ על הסימן שאלה בתחתית הימנית של המסך ונשמח לדבר :-)\n<br/>\n<br/>"
+    info_popup_title: "קצת עזרה על הכפתורים כאן וגם טיפים להורדה והעלאה של תמונות"
+    invite_popup_btn: "שלח הזמנה"
+    invited_link: To select photos for album and to download photos click here
+    invited_name: User Name
+    invited_password: Your password
+    notification:
+      photos_generating: "התמונות שביקשת ישלחו למייל שלך בקרוב"
+    publish_popup_btn: "שלח הזמנה ופרסם "
+  recognition:
+    create:
+      error: "אירעה שגיאה: "
+      success: "החיפוש הצליח."
+    destroy:
+      success: "החיפוש נמחק."
+    edit:
+      show-results: "הצג תוצאות"
+      title: "עדכן חיפוש"
+    form:
+      submit: "מצא אותי!"
+    index:
+      new: "חיפוש חדש"
+      title: "חיפושים קודמים"
+    new:
+      back: "חזור"
+      title: "מצא אותי באירוע"
+    show:
+      confidence: " ביטחון:"
+      no-results: "אין תוצאות"
+      progress: "התקדמות"
+      share-dropbox: "שתף ב Dropbox"
+      share-facebook: "שתף בפייסבוק"
+      title: "תוצאות חיפוש עבור ‎%s‎"
+      try-again: "נסה שוב"
+  shared:
+    author_footer:
+      photographed_by: צולם ע"י
+      photographed_by photo_person: 
+      photographed_by#{@photographer:
+        name}: 
+      photographed_by@photographer:
+        name: 
+      photographed_byphoto_person: 
+      photos_by: "צולם ע״י"
+    recognition_popups:
+      add_more: Add More Photos
+      before_wapp_link: |-
+        הי!
+
+        הנה כמה תמונות מהאירוע של %{event_name} שצולם ע"י %{photographer_name}
+        %{share_url}
+        כל אחד יכול לראות את התמונות של עצמו מהאירוע בקלות באמצעות Selffer
+      cancel_button_text: "ביטול"
+      cancel_delete: Cancel
+      confirm_button_text: "אישור"
+      copy: Copy
+      delete: "מחק"
+      delete_it: Yes, delete it!
+      download_text: "הכניסו את כתובת האימייל אליה ישלחו הקבצים"
+      download_title: "הורדת הקבצים שנבחרו"
+      email_prompt: '... או מניה בדוא"ל'
+      email_share: "שלח מייל"
+      ensure: "למחוק את התמונה הזו?"
+      fb_connect: "התחבר לפייסבוק"
+      fb_connect_prompt: "בבקשה, קודם כל התחבר לחשבון הפייסבוק:"
+      fb_placeholder: "רשום כאן טקסט שתרצה לשתף בפייסבוק "
+      fb_title_text: "הוספת טקסט לשיתוף ב-Facebook"
+      no_worries: "אל דאגה."
+      not_recover: "לתשומת לבך: לא ניתן לשחזר תמונה שנמחקה!"
+      photo_link: 'Photo Link:'
+      selected: "נבחר"
+      share: SHARING
+      sharing: "משתף, אנא המתן..."
+  simple_form:
+    error_notification:
+      default_message: "נתקלנו בבעיות הבאות:"
+      user:
+        edit:
+          email: דוא"ל
+          first_name: "שם פרטי"
+          last_name: "שם משפחה"
+          password: "סיסמא"
+        email: you@example.com
+        password: "סיסמה"
+    hints:
+      event:
+        edit:
+          cover_image: xxx
+          minimal_confidence: xxx
+          photographer: 
+          took_place_on: xxx
+        event_translations:
+          edit:
+            description: xxx
+            long_description: 
+            name: xxx
+            pre_text: xxx
+          new:
+            description: xxx
+            long_description: 
+            name: xxx
+            pre_text: xxx
+        new:
+          cover_image: xxx
+          minimal_confidence: xxx
+          photographer: 
+          took_place_on: xxx
+      publish_event_mails:
+        publish:
+          mail_list: 
+          title: 
+      temp_recognition:
+        edit:
+          email: דוא"ל
+        new:
+          email: דוא"ל
+      user:
+        after_auth:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+        album:
+          email: 
+        edit:
+          email: דוא"ל
+          first_name: "שם פרטי"
+          last_name: "שם משפחה"
+          password: "השאר ריק אלא אם אתה מעדכן סיסמה"
+        new:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+    labels:
+      event:
+        new:
+          photographer: 
+      user:
+        after_auth:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+        album:
+          email: 
+        edit:
+          email: דוא"ל
+          first_name: "שם פרטי"
+          last_name: " שם משפחה"
+          password: "סיסמה חדשה"
+        new:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+    'no': "לא"
+    placeholders:
+      event:
+        edit:
+          cover_image: xxx
+          minimal_confidence: xxx
+          photographer: 
+        event_translations:
+          edit:
+            description: XXXX description
+            long_description: 
+            name: xxx
+            pre_text: XXX
+          new:
+            description: XXX
+            long_description: 
+            name: xxx
+            pre_text: XXX
+        new:
+          cover_image: XXX
+          minimal_confidence: XXX
+          photographer: 
+      publish_event_mails:
+        publish:
+          title: 
+      user:
+        after_auth:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+        edit:
+          email: דוא"ל
+          first_name: "שם פרטי"
+          last_name: "שם משפחה"
+          password: "סיסמא"
+        email: you@example.com
+        new:
+          email: 
+          first_name: 
+          last_name: 
+          password: 
+        password: "סיסמה"
+    required:
+      html: <abbr title="required">*</abbr>
+      mark: "*"
+      text: "נדרש"
+    'yes': "כן"
+  support:
+    am: am
+    array:
+      last_word_connector: ", את "
+      two_words_connector: " את "
+      words_connector: ", "
+    formats:
+      default: "%a %d %b %H:%M:%S %Z %Y"
+      long: "%d ב%B, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm
+    share:
+      email:
+        come-on: "נו, אתה יודע שאתה רוצה..."
+        description: "עוזר לאנשים למצוא תמונות שלהם באירועים."
+        hi: "היי"
+        intro: "רצינו להראות לך כמה תמונות מהאירוע"
+        no-signup: "אין צורך בהרשמה."
+        see-photos: "צפה בתמונות שלך!"
+        see-photos-below: "צפה בתמונות שלך בקישור למטה:"
+        success: 
+      success: דוא"ל נשלח.
+    show:
+      confidence: "ביטחון:"
+      newsearch: "חיפוש חדש"
+      sendemail: שלח דוא"ל
+      title: "תוצאות חיפוש משתמש זמני עבור ‎%s‎"
+      updatesearch: "עדכן חיפוש"
+    time: 
+  temp_recognition:
+    create:
+      error: "אירעה שגיאה: "
+      success: "הוסף תמונות פנים על מנת למצוא אדם זה."
+    destroy:
+      success: "החיפוש נמחק."
+    edit:
+      last-results: "תוצאות אחרונות"
+      show-casual-users: "הצג ממייל"
+      title: "רענון חיפוש"
+      update-search: "עדכן חיפוש מזדמן"
+    form:
+      addfaceimage: "הוספת תמונת פנים"
+      removefaceimage: "הסר התמונה"
+      userfaces: "הפנים שלי"
+    index:
+      lastresults: "תוצאות אחרונות"
+      newsearch: "חיפוש חדש"
+      title: "חיפושי משתמש זמני"
+      updatesearch: "עדכן חיפוש"
+    new:
+      title: "חיפוש משתמש זמני חדש"
+    share:
+      email:
+        come-on: "נו, אתה יודע שאתה רוצה..."
+        description: "עוזר לאנשים למצוא תמונות שלהם באירועים."
+        hi: "היי"
+        intro: "רצינו להראות לך כמה תמונות מהאירוע"
+        no-signup: "אין צורך בהרשמה."
+        see-photos: "צפה בתמונות שלך!"
+        see-photos-below: "צפה בתמונות שלך בקישור למטה:"
+      success: דוא"ל נשלח.
+    show:
+      confidence: "ביטחון:"
+      newsearch: "חיפוש חדש"
+      sendemail: שלח דוא"ל
+      title: "תוצאות חיפוש משתמש זמני עבור ‎%s‎"
+      updatesearch: "עדכן חיפוש"
+    temp_face_images:
+      edit:
+        submit: "התחל חיפוש"
+        title: "חפש משתמש מזדמן"
+    update:
+      success: "החיפוש מתעדכן כעת."
+  temp_recognitions/multiple: 
+  time:
+    am: am
+    formats:
+      default: "%a %d %b %H:%M:%S %Z %Y"
+      long: "%d ב%B, %Y %H:%M"
+      short: "%d %b %H:%M"
+    pm: pm
+  unauthorized:
+    activerecord:
+      errors:
+        models:
+          face_image:
+            attributes:
+              image:
+                blank: 
+    default: ". מצטערים, אתה לא מורשה לגשת לדף המבוקש."
+    user:
+      signed_in: 
+      signed_up: 
+      updated: 
+  watermark:
+    photo_by: 
+    power_by: 

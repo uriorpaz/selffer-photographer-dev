@@ -1,0 +1,383 @@
+/*
+* This is a manifest file that'll be compiled into application.css, which will include all the files
+* listed below.
+*
+* Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+* or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+*
+* You're free to add application-wide styles to this file and they'll appear at the bottom of the
+* compiled file so the styles you add here take precedence over styles defined in any styles
+* defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+* file per style scope.
+*
+*= require toastr
+*= require image-picker
+*= require intercom-rtl
+*= require sweet-alert
+*= require_self
+*/
+
+.mix-grid .mix a.mix-link.center-link{
+  right: 40%;
+}
+
+.page-content.full {
+  margin-left: 0px;
+}
+
+.thumbnails li img{
+  width: 150px;
+}
+
+.checkbox-overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 15px 15px;
+  background: rgba(252,146,7,0.3);
+}
+
+.actions-overlay{
+  opacity: 1;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin-right: 3px;
+  padding: 1px;
+  .action-icon{
+    padding: 2px;
+    margin: 2px;
+    display: inline-block;
+    background-color: rgba(50,50,50,0.5);
+    text-align: center;
+    border-radius: 2px;
+    opacity: 0;
+    color: white;
+    &:hover{
+      opacity: 1 !important;
+    }
+    &.active{
+      background-color: rgba(250,0,0,0.5);
+    }
+    .fa{
+      font-size: 2em;
+      line-height: normal;
+    }
+  }
+
+  .open{
+    opacity: 1;
+  }
+  .main-actions{
+    float: right;
+    .btn-group{
+      vertical-align: initial;
+    }
+  }
+}
+
+.mix:hover{
+  .actions-overlay{
+    opacity: 1;
+  }
+}
+
+.gallery-action{
+  float: right;
+  padding-top: 13px;
+}
+
+#photo-gallery{
+  margin-right: 0px;
+  margin-left: 0px;
+  .mix-details.photo-phrame{
+    height: 50%;
+    width: 50%;
+    top: 150px;
+  }
+}
+
+.photo{
+  // width: 16%;
+  padding-right: 3px;
+  padding-left: 3px;
+  margin-bottom: 3px;
+  &:hover{
+    .actions-overlay{
+      .action-icon{
+        opacity: 0.8;
+      }
+    }
+  }
+  img{
+    min-width: 100%;
+  }
+  .photo-container{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  a.photo-tag.active{
+    color: blue;
+  }
+}
+
+#process-event{
+  margin-top: 23px;
+}
+
+#add-event{
+  height: 100%;
+  background: url(add_event.jpeg) no-repeat;
+  background-size: contain;
+  margin: 0;
+  &:hover{
+    background: url(add_event_hover.jpeg) no-repeat;
+    background-size: contain;
+  }
+}
+
+.mix .mix-details.photo-load-area{
+  padding: 0px;
+}
+
+#galery-files-load{
+  display: block;
+  height: 100%;
+  div.fileinput-new{
+    background: url('upload_default.jpeg') no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    #load-new-photo{
+      width: 100%;
+      height: 100%;
+      background: none;
+    }
+    &:hover{
+      background: url('upload_mouse_hover.jpeg') no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+#add-new-event{
+  height: 100%;
+  .mix-details{
+    background: none;
+  }
+}
+#crop-box{
+  width: 700px;
+  height: 700px;
+}
+.modal.fade.in {
+  top: 50px;
+}
+#width-btn{
+  display: none;
+}
+.full-logo{
+  float: right;
+}
+
+.mix .mix-details {
+  padding: 5px;
+  padding-top: 35px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  text-align: center;
+  position: absolute;
+}
+
+#processing_count{
+  .progress{
+    margin-bottom: 0px;
+    height: 28px;
+    .progress-bar{
+      width: 100%;
+      padding: 4px 3px 0;
+      font-size: 13px;
+    }
+  }
+}
+
+#publish-event > .modal-footer{
+  .button_to{
+    display: inline-block;
+  }
+}
+
+/*#block-msg{
+  h1{
+    text-align: left;
+    background-color: #e9ecf3;
+    margin: 0px;
+    top: 20%;
+    font-size: 22px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+  }*/
+  #progress-circle{
+    height: 196px;
+    width: 100%;
+    background: url('loader.gif') no-repeat center center;
+    margin-top: 50px;
+    #progress-percent{
+      left: 0px;
+      position: absolute;
+      font-size: 70px;
+      width: 100%;
+      height: 196px;
+      line-height: 200px;
+    }
+  }
+  .duplicates{
+    color: #4DCACC;
+  }
+  .fail{
+    color: #FE4A4B;
+  }
+/*}*/
+
+.page-sidebar-wrapper{
+  margin-left: 50px;
+  float: left;
+  .page-sidebar{
+    margin-right: 0px;
+    width: auto;
+    background-color: transparent;
+    ul.page-sidebar-menu {
+      li{
+        display: inline-block;
+      }
+      #li-publish{display:none;}
+      #li-preview{display:none;}
+      #li-invite{display:none;}
+      #published{
+        padding: 4px 10px 5px 10px;
+        line-height: 1.5;
+        display: none;
+      }
+    }
+  }
+}
+
+
+.event-page-titles{
+  display: inline-block;
+  float: left;
+}
+
+#delete-event{
+  color: red;
+  i{
+    color: red;
+  }
+}
+
+#full-width{
+  direction: rtl;
+}
+
+.tabbable.tabbable-custom.tabbable-noborder{
+  overflow: visible;
+}
+
+.lang.tabs[aria-expanded="false"]{
+  background-color: #ddd;
+}
+
+#loading-indicator {
+   left: 0px;
+   top: 10px;
+   margin-left: 200px;
+   height: 50px;
+   width: 50px;
+ }
+
+#loading-indicator-event {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  margin-left: 550px;
+  height: 150px;
+  width: 150px;
+
+}
+
+.publish-link {
+   color: green;
+}
+
+#invite-title {
+  color: #E26A6A;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.portlet-title#invite-portlet > *{
+  color: #5b9bd1;
+  font-size: 15px;
+  float: right;
+}
+
+textarea#message{
+  width: 470px;
+  height: 150px;
+  resize: none;
+}
+
+#invite-table{
+  margin-bottom: -10px;
+}
+
+.cancel-btn{
+  margin-right: 15px;
+  font-size: 14px;
+  color: #484848;
+}
+
+#arrow{
+  height: 14px;
+  margin-right: 5px;
+}
+.expand#arrow{
+    background-image: url(/assets/global/img/portlet-expand-icon.png);
+}
+
+.collapse#arrow{
+    background-image: url(/assets/global/img/portlet-collapse-icon.png);
+}
+
+.form-group.form-md-line-input.invite{
+  margin: 0px;
+}
+
+label[for=message]{
+  margin-top: 15px;
+  direction: rtl;
+  float: right;
+  }
+
+label[for=invited_email],label[for=subject]  {
+  direction: rtl;
+  float: right;
+  }
+
+.error{
+  color: #E26A6A;
+  font-weight: 60px;
+  margin-bottom: 0px;
+}
+
+#invited_email, #message, #subject{
+  direction: rtl;
+}
+
+#footer-btn{
+  text-align: left;
+}

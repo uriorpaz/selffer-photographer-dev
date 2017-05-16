@@ -1,0 +1,48 @@
+/ BEGIN HEADER
+.page-header.navbar.navbar-fixed-top
+  / BEGIN HEADER INNER
+  .page-header-inner
+    / BEGIN LOGO
+    .page-logo
+      %a{href: photographer_path(@photographer)}
+        = image_tag asset_path('logo-selffer-white.svg'), alt: 'logo', class: 'logo-default', style: 'height: 30px;'
+      .menu-toggler.sidebar-toggler{style: 'display: none'}
+        / DOC: Remove the above "hide" to enable the sidebar toggler button on header
+    / END LOGO
+    / BEGIN PAGE TOP
+    .page-top
+      / BEGIN TOP NAVIGATION MENU
+      .top-menu
+        %ul.nav.navbar-nav.pull-right
+          - if admin_signed_in? && @event
+            -unless @event.id.nil?
+              %li
+                .actions#process-event
+                  = link_to 'Clear Event Cache', event_post_service_path(@event), class: "btn btn-sm green-jungle"
+          %li.dropdown.dropdown-user.dropdown-dark
+            %a.dropdown-toggle{"data-close-others" => "true", "data-hover" => "dropdown", "data-toggle" => "dropdown", :href => "javascript:;"}
+              %span.username.username-hide-on-mobile
+                = @photographer.name
+              / DOC: Do not remove below empty space( ) as its purposely used
+              = image_tag @photographer.logo.url || 'No_image_available.jpg'
+              %i.fa.fa-angle-down
+            %ul.dropdown-menu.dropdown-menu-default
+              - unless @photographer.is_owner
+                %li
+                  = link_to photographer_profile_path(@photographer) do
+                    %i.icon-user
+                    My Profile
+              %li
+                = link_to photographer_events_path(@photographer) do
+                  %i.icon-calendar
+                  My Events
+              %li.divider
+              %li
+                = link_to destroy_photographer_session_path, method: :delete do
+                  %i.icon-key
+                  Log Out
+          / END USER LOGIN DROPDOWN
+      / END TOP NAVIGATION MENU
+    / END PAGE TOP
+  / END HEADER INNER
+/ END HEADER

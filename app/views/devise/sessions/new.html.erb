@@ -1,0 +1,43 @@
+<!-- BEGIN LOGIN FORM -->
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), class: "login-form") do |f| %>
+  <h3 class="form-title">Sign In</h3>
+    <% if flash[:alert] || devise_error_messages!.present? %>
+      <div class="alert alert-danger">
+        <button class="close" data-close="alert"></button>
+        <span><%= flash[:alert] || devise_error_messages! %></span>
+      </div>
+    <% end %>
+    <% if flash[:notice] %>
+      <div class="alert alert-success">
+        <button class="close" data-close="alert"></button>
+        <span><%= flash[:notice] %></span>
+      </div>
+    <% end %>
+  <div class="alert alert-danger display-hide">
+    <button class="close" data-close="alert"></button>
+    <span>
+    Enter any username and password. </span>
+  </div>
+  <div class="form-group">
+    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that-->
+    <label class="control-label visible-ie8 visible-ie9">Username</label>
+    <%= f.email_field :email, value: params[:email], autofocus: true, placeholder: "Username", autocomplete: "off", class: "form-control form-control-solid placeholder-no-fix"%>
+  </div>
+  <div class="form-group">
+    <label class="control-label visible-ie8 visible-ie9">Password</label>
+    <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control form-control-solid placeholder-no-fix" %>
+  </div>
+  <%= f.submit "Login", hidden: true %>
+  <div class="form-actions">
+    <%= f.submit "Login", class: "btn btn-success uppercase" %>
+    <label class="rememberme check">
+    <%= f.check_box :remember_me %> Remember </label>
+    <%= link_to 'Forgot Password?', new_photographer_password_path, class: "forget-password", id: "forget-password" %>
+  </div>
+<!--   <div class="create-account">
+    <p>
+      <%# link_to 'Create an account', new_photographer_registration_path, class: "uppercase", id: "register-btn" %>
+    </p>
+  </div> -->
+<% end %>
+<!-- END LOGIN FORM -->

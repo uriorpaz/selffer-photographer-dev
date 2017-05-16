@@ -1,0 +1,67 @@
+<% content_for :sidebar do %>
+  <%= render 'shared/sidebar' %>
+<% end %>
+<div class="row">
+  <div class="col-md-12">
+    <br>
+    <h1>Guest invites</h1>
+    <%= form_for @event do |f| %>
+      <%= f.text_area :share_message %>
+      <br>
+      <%= f.submit 'Update message' %>
+    <% end %>
+    <br>
+    <%= form_for [@event, GuestInvite.new] do |i| %>
+      <%= i.text_field :email, placeholder: 'email' %>
+      <%= i.text_field :phone, placeholder: 'phone' %>
+      <%= i.submit 'Create event' %>
+    <% end %>
+    <br>
+    <%= form_tag upload_csv_event_guest_invites_path, multipart: true do %>
+      <%= file_field_tag :file %>
+      <%= submit_tag 'upload file' %>
+    <% end %>
+    <br>
+    <% if @guest_invites.present? %>
+      <div class="portlet box red">
+        <div class="portlet-title">
+          <div class="caption">
+            <i class="fa fa-cogs"></i>Invite Guest Table
+          </div>
+          <div class="tools">
+            <a href="javascript:;" class="collapse">
+            </a>
+          </div>
+        </div>
+        <div class="portlet-body">
+          <div class="table-scrollable">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>
+                     #
+                  </th>
+                  <th>
+                     Email
+                  </th>
+                  <th>
+                     Phone
+                  </th>
+                  <th>
+                     Status
+                  </th>
+                  <th>
+                     Action
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <%= render @guest_invites %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

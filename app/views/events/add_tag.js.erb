@@ -1,0 +1,5 @@
+$('#tag_li').before('<li> <%= link_to change_tag_if_hebrew(@tag, @count), event_path(@event, tag: URI.encode(@tag)), data: {tag: "tag"} %> </li>')
+<% @event.photos.each do |photo| -%>
+$("#photo-<%=photo.id%>-tags").append('<li> <%= link_to(@tag, event_photo_toggle_tag_path(@event, photo, tag: URI.encode(@tag)), class: "photo-tag", remote: true )%> </li>');
+<% end -%>
+$('#tag_form #tag').val('');

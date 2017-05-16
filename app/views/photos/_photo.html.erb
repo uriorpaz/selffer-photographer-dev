@@ -1,0 +1,50 @@
+<div class="col-md-2 col-sm-2 mix <%="category_bg" if photo.background %>
+category_<%="not_" unless photo.priv%>priv photo <%= ' empty-photo' unless photo.img %>
+<%= 'category_like' if photo.like %> <%= 'category_album' if photo.album %> not_square_resized" id="photo-<%=photo.id%>" data-time="<%= photo.time_stamp %>">
+  <div class="checkbox-overlay" hidden>
+    <div class="md-checkbox has-success">
+      <input type="checkbox" id="checkbox<%=photo.id%>" class="md-check", value="<%=photo.id%>" name="upload_photos[]">
+      <label for="checkbox<%=photo.id%>" class="checkbox-label">
+        <span></span>
+        <span class="check"></span>
+        <span class="box"></span>
+        Select
+      </label>
+    </div>
+  </div>
+  <div class="actions-overlay">
+    <div class="main-actions">
+      <%= link_to event_photo_path(@event,photo, photo: {like: !photo.like}), method: :patch, remote: true, class: 'like-link' do %>
+        <div class="action-icon like-photo-action <%= 'active' if photo.like %>"><i class="fa fa-heart"></i></div>
+      <% end %>
+      <%= link_to event_photo_path(@event,photo, photo: {album: !photo.album}), method: :patch, remote: true, class: 'album-link' do %>
+        <div class="action-icon album-photo-action <%= 'active' if photo.album %>"><i class="fa fa-book"></i></div>
+      <% end %>
+      <%= link_to event_photo_path(@event,photo, photo: {priv: !photo.priv}), method: :patch, remote: true, class: 'priv-link' do %>
+        <div class="action-icon priv-photo-action <%= 'active' if photo.priv %>"><i class="fa fa-lock"></i></div>
+      <% end %>
+      <div class="btn-group">
+        <%= link_to 'javascript:;', method: :patch, class: 'tags-link  dropdown-toggle', data: {toggle: 'dropdown'} do %>
+          <div class="action-icon"><i class="fa fa-ellipsis-v"></i></div>
+        <% end %>
+        <ul id="photo-<%=photo.id%>-tags" class="dropdown-menu pull-right">
+          <% @tags.each do |tag| %>
+            <li>
+              <%= link_to tag, event_photo_toggle_tag_path(@event, photo, tag: URI.encode(tag)), class: "photo-tag #{'active' if photo.tags.map(&:name).include?(tag)}", remote: true %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <% 
+    link_hash = {class: "fancybox-button", data: {rel: "fancybox-button"}}
+    link_hash['data-fancybox-title'] = "'"+best_in_place(photo, :comment, url: event_photo_path(@event,photo.id), place_holder: 'Input comment').to_s+"'" if photo.id
+  %>
+  <!-- photo.img_url_high -->
+  <div class='photo-container'>
+    <%= link_to photo.img_url_high, link_hash, class: 'image-gallery-link' do %>
+      <%= image_tag photo.img_url_low, class: "img-responsive not-loaded", alt: '', lazy: true %>
+    <% end %>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+<p class = "publish-link" > An email will be sent to <%= @event.invites.last.invited_email %> <%= @event.invites.count == 1 ? "" : "and " + (@event.invites.count-1).to_s + "  more" %>  when the  upload is finished. <br>
+  <%= link_to 'Add another invite', event_path(@event), style: "color: green;"  %>
+</p>

@@ -1,0 +1,3 @@
+= t("photographer_client.email_with_photos_url", event_type: @event.get_translated(:event_type,I18n.locale), event_name: @event.get_translated(:name,I18n.locale))
+- @archives.each do |archive|
+  = archive.file.url

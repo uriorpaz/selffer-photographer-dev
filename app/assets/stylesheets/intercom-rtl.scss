@@ -1,0 +1,55 @@
+#intercom-container:lang(he) {
+
+	.intercom-conversations-item-admin-avatar,
+	#intercom-container .intercom-conversations-item-user-avatar,
+	.intercom-sheet-header-conversations-button,
+	.intercom-sheet-header-conversations-button {
+		float: right;
+	}
+
+
+	.intercom-conversations-item-timestamp {
+		float: left;
+		text-align: left;
+	}
+
+	.intercom-conversations-item-title {
+		text-align: right;
+	}
+
+	.intercom-conversations-item,
+	.intercom-conversations-item-body-container {
+		padding-right: 17px;
+		padding-left: 0;
+	}
+
+	.intercom-conversations-item-body-container {
+		margin-right: 55px;
+		margin-left: 0;
+	}
+
+	.intercom-conversations-item-summary {
+		padding-left: 15px;
+		padding-right: 0;
+		text-align: right;
+	}
+
+	.intercom-conversations-item-title-container {
+		margin: 0 0 0 50px;
+	}
+
+	.intercom-sheet-header-close-button {
+		float: left;
+		margin-right: 15px;
+		margin-left: 0;
+	}
+} 
+
+p.intercom-align-left {
+	text-align: right !important;
+}
+
+a.intercom-sheet-header-button.intercom-sheet-header-minimize-button {
+	float: left;
+	margin-left: 0;
+}

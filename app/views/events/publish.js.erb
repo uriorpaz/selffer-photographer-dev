@@ -1,0 +1,12 @@
+<% if published %>
+    $('.modal.in').modal('hide');
+    toastr.success("Event sucsessfully published");
+    $('#li-publish').hide();
+    $('#li-preview').hide();
+    $('#li-invite').css('display', 'inline-block');
+    $('#published').css('display', 'inline-block');
+    $('#btn-publish').hide();
+    $('#close-invite-btn').show();
+<% end %>
+
+

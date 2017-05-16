@@ -1,0 +1,24 @@
+<% if @error %>
+  $('.modal.in').modal('hide');
+  toastr.error('<%= @error %>');
+<% else %>
+  $('#invite-table').show();
+  $('tbody').append("<%= escape_javascript(render partial: 'invite', locals: {invite: @invite}) %>");
+  $('p.publish-link').html("<%= escape_javascript(render partial: 'link') %>");
+  toastr.success("Event successfully sent");
+<% end %>
+ <% if published %>
+  $('.modal.in').modal('hide');
+  $("#send-invite").val('Send Invite');
+  toastr.success("Event successfully published");
+<% end %>
+$('.modal.in').modal('hide');
+if ($("#progress-percent").text() == "0%"){$.unblockUI();}
+else {$.blockUI({ message: $('#block-msg') })};
+$('#invited_email').val('');
+$('#loading-indicator').hide();
+$('#li-publish').hide();
+$('#li-preview').hide();
+$('#li-invite').css('display', 'inline-block');
+$('#published').css('display', 'inline-block');
+$('#bg_photo_count').text('<%= @covers %>');

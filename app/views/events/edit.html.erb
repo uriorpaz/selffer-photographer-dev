@@ -1,0 +1,117 @@
+<% content_for :sidebar do %>
+  <%= render 'shared/sidebar' %>
+<% end %>
+<% content_for :js do %>
+  <%= javascript_include_tag 'jquery.lazyload' %>
+  <script>
+    $(function(){
+      $('.tabs').click(function(){
+        $('.lang-fields').hide();
+        if(this.id=='en'){
+          $('.en-fields').show();
+        } else if(this.id=='he'){
+          $('.he-fields').show();
+        }
+      })
+      $("img.not-loaded").lazyload({
+        effect: 'fadeIn',
+        load: function() {
+          $(this).removeClass("not-loaded");
+          $(this).parent().parent().addClass('not_square_resized')
+          square_resize();
+        }
+      });
+    })
+  </script>
+<% end %>
+<ul class="page-breadcrumb breadcrumb">
+  <li>
+    <%= link_to 'Home', photographer_events_path(@photographer) %>
+    <i class="fa fa-circle"></i>
+  </li>
+  <li>
+    <%= link_to @event.name || 'No name', event_path(@event) %>
+    <i class="fa fa-circle"></i>
+  </li>
+  <li>
+    <%= link_to 'Edit', edit_event_path(@event) %>
+  </li>
+</ul>
+<!-- BEGIN PAGE CONTENT-->
+<div class="row">
+  <div class="col-md-12 ">
+    <!-- BEGIN SAMPLE FORM PORTLET-->
+    <div class="portlet light">
+      <div class="portlet-title">
+        <div class="caption font-red-sunglo">
+          <span class="caption-subject bold uppercase"> Event </span>
+        </div>
+        <div class="actions">
+          <%= link_to 'Delete', event_path(@event), method: :delete, class: "btn btn-sm red", 'data-confirm' => "Are you sure?" %>
+        </div>
+        <% if admin_signed_in? %>
+          <div class="actions" id='process-event'>
+            <%= link_to 'Process event', event_post_service_path(@event), class: "btn btn-sm green" %>
+          </div>
+        <% end %>
+      </div>
+      <div class="portlet-body form">
+        <ul class="nav nav-tabs">
+          <li class="active">
+            <a href="#portlet_tab3" id="en" class='tabs' data-toggle="tab">
+            English </a>
+          </li>
+          <li>
+            <a href="#portlet_tab2" id="he" class='tabs' data-toggle="tab">
+            Hebrew </a>
+          </li>
+        </ul>
+        <%= form_for @event, role: "form" do |f| %>
+          <div class="form-body">
+            <div class="form-group form-md-line-input">
+              <%= text_field_tag 'event[lang[en[name]]]', @event.get_translated(:name, 'en'), id: "form_control_1", class: "form-control lang-fields en-fields", placeholder: "Enter event name"  %>
+              <%= text_field_tag 'event[lang[he[name]]]', @event.get_translated(:name, 'he'), id: "form_control_1", class: "form-control lang-fields he-fields", placeholder: "Enter event name", style: 'display: none;'  %>
+              <label for="form_control_1">Event name</label>
+              <span class="help-block">Some help goes here...</span>
+            </div>
+            <div class="form-group form-md-line-input">
+              <%= text_field_tag 'event[lang[en[event_type]]]', @event.get_translated(:event_type, 'en'), id: "form_control_1", class: "form-control lang-fields en-fields", placeholder: "Enter event type"  %>
+              <%= text_field_tag 'event[lang[he[event_type]]]', @event.get_translated(:event_type, 'he'), id: "form_control_1", class: "form-control lang-fields he-fields", placeholder: "Enter event type", style: 'display: none;'  %>
+              <label for="form_control_1">Event type</label>
+              <span class="help-block">Some help goes here...</span>
+            </div>
+            <div class="form-group form-md-line-input">
+              <%= f.text_field :date, value: @event.decorate_date, class: "form-control form-control-inline date-picker", placeholder: "Enter event date", size: 16  %>
+              <label for="form_control_1">Event date</label>
+              <span class="help-block">Select date</span>
+            </div>
+            <!-- <div class="form-group form-md-line-input">
+              <%= f.text_field :guests, class: "form-control", placeholder: "Enter guests amount"  %>
+              <label for="form_control_1">Event guests amount</label>
+              <span class="help-block">Some help goes here...</span>
+            </div>
+            <div class="form-group form-md-line-input">
+              <%= text_field_tag 'event[lang[en[place]]]', @event.get_translated(:place, 'en'), class: "form-control lang-fields en-fields", placeholder: "Enter event place"  %>
+              <%= text_field_tag 'event[lang[he[place]]]', @event.get_translated(:place, 'he'), class: "form-control lang-fields he-fields", placeholder: "Enter event place", style: 'display: none;'  %>
+              <label for="form_control_1">Event place</label>
+            </div>
+            <div class="form-group form-md-line-input">
+              <%= text_area_tag 'event[lang[en[description]]]', @event.get_translated(:description, 'en'), class: "form-control lang-fields en-fields", placeholder: "Enter description", rows: 4  %>
+              <%= text_area_tag 'event[lang[he[description]]]', @event.get_translated(:description, 'he'), class: "form-control lang-fields he-fields", placeholder: "Enter description", rows: 4, style: 'display: none;'  %>
+              <label for="form_control_1">Description</label>
+            </div> -->
+          </div>
+          <!-- <h4><%# link_to 'preview your event page', "#{ENV['STAGING_MAIN_SERVER_URL'] || Rails.application.secrets[:env]['MAIN_SERVER_URL']}/events/#{@event.slug}", target: '_blank' %></h4> -->
+          <div class="form-actions noborder">
+            <%= f.submit 'Submit', class: "btn blue" %>
+          </div>
+        <%end%>
+<!--         <h2>Cover photos</h2><p>You can change it in <%= link_to "gallery", event_path(@event) %></p>
+        <div class="row mix-grid" id='photo-gallery'>
+          <%# render @bg_photos %>
+        </div> -->
+      </div>
+    </div>
+    <!-- END SAMPLE FORM PORTLET-->
+  </div>
+</div>

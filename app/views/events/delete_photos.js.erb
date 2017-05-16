@@ -1,0 +1,11 @@
+toastr.success('<%= @amount %> photos removed');
+<% @photos.each do |photo| %>
+  $('#photo-<%=photo.id%>').remove();
+<% end %>
+$('#all_photo_count').text('<%= @all_count %>');
+$('#bg_photo_count').text('<%= @bg_count %>');
+$('#priv_photo_count').text('<%= @priv_count %>');
+$('#not_priv_photo_count').text('<%= @not_priv_count %>');
+$('#like_photo_count').text('<%= @like_count %>');
+$('#album_photo_count').text('<%= @album_count %>');
+Portfolio.init();

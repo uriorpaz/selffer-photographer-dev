@@ -1,0 +1,13 @@
+// var new_element = $("<%= j render @photo %>")
+// $('#photo-gallery').append("<%= j render @photo %>")
+// new_element.find('.expand-photo-actions').click(function(){
+//   $(this).parent().siblings('.additional-actions').toggle();
+// })
+// $('#all_photo_count').text('<%=@photo_count%>');
+log.trace('file ' + '<%= @photo.original_filename%>' + ' saved to photos table with id ' + '<%= @photo.id %>' + ' upload_id = ' + '<%= params[:photo][:upload_log_id]%>');
+<%if @process_count>0%>
+  $('#progress-processed').text("Processing: "+<%=@process_count%>)
+  $('#processing_count').show();
+<%end%>
+// setTimeout(function(){init_lazy_load()}, 500);
+// Portfolio.init();
