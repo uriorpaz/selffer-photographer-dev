@@ -57,7 +57,7 @@ gem 'httparty'
 gem 'friendly_id'
 
 # for backround worker
-gem 'sidekiq'
+gem 'sidekiq', '4.0.1'
 gem 'redis-namespace'
 
 # lazyload images in gallery
